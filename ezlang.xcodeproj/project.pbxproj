@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7A21FC511BFE0EF30047BE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A21FC501BFE0EF30047BE1B /* AppDelegate.swift */; };
-		7A21FC531BFE0EF30047BE1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A21FC521BFE0EF30047BE1B /* ViewController.swift */; };
 		7A21FC561BFE0EF30047BE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A21FC541BFE0EF30047BE1B /* Main.storyboard */; };
 		7A21FC581BFE0EF30047BE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A21FC571BFE0EF30047BE1B /* Assets.xcassets */; };
 		7A21FC5B1BFE0EF30047BE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A21FC591BFE0EF30047BE1B /* LaunchScreen.storyboard */; };
 		7A21FC661BFE0EF30047BE1B /* ezlangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A21FC651BFE0EF30047BE1B /* ezlangTests.swift */; };
 		7A21FC711BFE0EF30047BE1B /* ezlangUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A21FC701BFE0EF30047BE1B /* ezlangUITests.swift */; };
+		7ACC83D61C0619A500AF92C1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC83D51C0619A500AF92C1 /* GameViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7ACC83D81C061A2900AF92C1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC83D71C061A2900AF92C1 /* GameScene.swift */; settings = {ASSET_TAGS = (); }; };
+		7ACC83DA1C061AC000AF92C1 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC83D91C061AC000AF92C1 /* Letter.swift */; settings = {ASSET_TAGS = (); }; };
+		7ACC83DC1C06220100AF92C1 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC83DB1C06220100AF92C1 /* Array2D.swift */; settings = {ASSET_TAGS = (); }; };
+		7ACC83DE1C06221800AF92C1 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC83DD1C06221800AF92C1 /* Level.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		7A21FC4D1BFE0EF30047BE1B /* ezlang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ezlang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A21FC501BFE0EF30047BE1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A21FC521BFE0EF30047BE1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7A21FC551BFE0EF30047BE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A21FC571BFE0EF30047BE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A21FC5A1BFE0EF30047BE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		7A21FC6C1BFE0EF30047BE1B /* ezlangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ezlangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A21FC701BFE0EF30047BE1B /* ezlangUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ezlangUITests.swift; sourceTree = "<group>"; };
 		7A21FC721BFE0EF30047BE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ACC83D51C0619A500AF92C1 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		7ACC83D71C061A2900AF92C1 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		7ACC83D91C061AC000AF92C1 /* Letter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		7ACC83DB1C06220100AF92C1 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		7ACC83DD1C06221800AF92C1 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Level.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				7A21FC501BFE0EF30047BE1B /* AppDelegate.swift */,
-				7A21FC521BFE0EF30047BE1B /* ViewController.swift */,
 				7A21FC541BFE0EF30047BE1B /* Main.storyboard */,
 				7A21FC571BFE0EF30047BE1B /* Assets.xcassets */,
 				7A21FC591BFE0EF30047BE1B /* LaunchScreen.storyboard */,
 				7A21FC5C1BFE0EF30047BE1B /* Info.plist */,
+				7ACC83D51C0619A500AF92C1 /* GameViewController.swift */,
+				7ACC83D71C061A2900AF92C1 /* GameScene.swift */,
+				7ACC83D91C061AC000AF92C1 /* Letter.swift */,
+				7ACC83DB1C06220100AF92C1 /* Array2D.swift */,
+				7ACC83DD1C06221800AF92C1 /* Level.swift */,
 			);
 			path = ezlang;
 			sourceTree = "<group>";
@@ -255,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A21FC531BFE0EF30047BE1B /* ViewController.swift in Sources */,
+				7ACC83DE1C06221800AF92C1 /* Level.swift in Sources */,
 				7A21FC511BFE0EF30047BE1B /* AppDelegate.swift in Sources */,
+				7ACC83D61C0619A500AF92C1 /* GameViewController.swift in Sources */,
+				7ACC83DA1C061AC000AF92C1 /* Letter.swift in Sources */,
+				7ACC83D81C061A2900AF92C1 /* GameScene.swift in Sources */,
+				7ACC83DC1C06220100AF92C1 /* Array2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +499,7 @@
 				7A21FC771BFE0EF30047BE1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A21FC781BFE0EF30047BE1B /* Build configuration list for PBXNativeTarget "ezlangTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +508,7 @@
 				7A21FC7A1BFE0EF30047BE1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A21FC7B1BFE0EF30047BE1B /* Build configuration list for PBXNativeTarget "ezlangUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +517,7 @@
 				7A21FC7D1BFE0EF30047BE1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

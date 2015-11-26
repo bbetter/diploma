@@ -12,9 +12,11 @@ let NumColumns = 5
 let NumRows = 5
 
 class Level {
-    private var letters = Array2D<Letter>(columns: NumColumns, rows: NumRows)
     
-    func cookieAtColumn(column: Int, row: Int) -> Letter? {
+    private let uppercaseLetters = Array(65...90).map {String(UnicodeScalar($0))}
+    private var letters = Array2D<Letter>(rows: NumColumns, columns: NumRows)
+    
+    func letterAtColumn(row: Int, column: Int) -> Letter? {
         assert(column >= 0 && column < NumColumns)
         assert(row >= 0 && row < NumRows)
         return letters[column, row]
@@ -24,19 +26,26 @@ class Level {
         return createInitialLetters()
     }
     
-    private func createInitialLetters() -> Set<Cookie> {
+    func randomLetter() -> String {
+        let randomIndex = arc4random_uniform(
+            UInt32(uppercaseLetters.count))
+        return uppercaseLetters[Int(randomIndex)]
+    }
+    
+    
+    private func createInitialLetters() -> Set<Letter> {
         var set = Set<Letter>()
         
+    
         // 1
         for row in 0..<NumRows {
             for column in 0..<NumColumns {
                 
-                // 2
-                var cookieType = CookieType.random()
+        
                 
                 // 3
-                let cookie = Cookie(column: column, row: row, cookieType: cookieType)
-                Letters[column, row] = cookie
+                let cookie = Letter(row: row, column: column, letter: randomLetter())
+                letters[row, column] = cookie
                 
                 // 4
                 set.insert(cookie)

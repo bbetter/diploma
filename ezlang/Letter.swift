@@ -24,9 +24,18 @@ class Letter : CustomStringConvertible , Hashable{
     var row:Int = 0
     var column:Int = 0
     var positionInWord:Int = 0
+    var sprite: SKSpriteNode?
+    var letter: String = ""
+    
+    init(row:Int,column:Int,letter:String){
+        self.row = row
+        self.column = column
+        self.letter = letter
+    }
+
  
     var description : String {
-        return "position:\(positionInWord) square:(\(column),\(row))"
+        return "letter:\(letter) position:\(positionInWord) square:(\(column),\(row))"
     }
     
     var hashValue: Int {

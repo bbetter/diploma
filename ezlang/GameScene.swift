@@ -44,6 +44,7 @@ class GameScene : SKScene{
     }
     
     func addSpritesForLetters(letters: Set<Letter>) {
+        lettersLayer.removeAllChildren()
         for letter in letters {
             let sprite = SKSpriteNode(texture: SKTexture(imageNamed: "word_block"),size: CGSize(width: 50,height: 50))
             sprite.colorBlendFactor = 1
@@ -96,12 +97,20 @@ class GameScene : SKScene{
     }
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         // 1
+        var i = 0
+
         swipedLetters.forEach({
             print("row:\($0.row);column:\($0.column);letter:\($0.letter)")
-            $0.sprite?.texture=SKTexture(imageNamed: "word_block")
-                $0.sprite?.color = UIColor.whiteColor()
+            $0.sprite?.runAction( SKAction.sequence([
+                SKAction.moveTo(CGPoint(x: 50.0 * CGFloat(i),y: 0), duration:1.0),
+                SKAction.runBlock({
+                    self.addSpritesForLetters(self.level.shuffle())
+                })
+                ]))
+            $0.sprite?.color = UIColor.greenColor()
+            $0.sprite?.zPosition = 2
+            i++
             })
-        swipedLetters.removeAll()
     }
 
     

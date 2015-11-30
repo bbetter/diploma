@@ -48,8 +48,8 @@ class GameViewController : UIViewController{
     }
     
     func shuffle() {
-        let newCookies = level.shuffle()
-        scene!.addSpritesForLetters(newCookies)
+        let newLetters = level.shuffle()
+        scene!.addSpritesForLetters(newLetters)
     }
 
 }

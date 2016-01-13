@@ -9,47 +9,37 @@
 import Foundation
 import UIKit
 import SpriteKit
+import RealmSwift
 
-class GameViewController : UIViewController{
-    var scene : GameScene?
-    var level: Level!
-    
+class GameViewController: UIViewController {
+    var scene: GameScene?
+    //var level: GameLevel!
+
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-    
+
     override func shouldAutorotate() -> Bool {
-        return true
+        return (UIDevice.currentDevice().userInterfaceIdiom == .Pad)
     }
-    
+
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.AllButUpsideDown
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Configure the view.
         let skView = view as! SKView
         skView.multipleTouchEnabled = false
-        
+        skView.showsFPS = true
+        skView.showsNodeCount = true
+
         // Create and configure the scene.
         scene = GameScene(size: skView.bounds.size)
         scene!.scaleMode = .AspectFill
-        level = Level()
-        scene!.level = level
-        // Present the scene.
+        
         skView.presentScene(scene)
-        beginGame()
-    }
-    
-    func beginGame() {
-        shuffle()
-    }
-    
-    func shuffle() {
-        let newLetters = level.shuffle()
-        scene!.addSpritesForLetters(newLetters)
     }
 
 }

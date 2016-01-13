@@ -1,0 +1,6 @@
+framework module Pods_ezlang {
+  umbrella header "Pods-ezlang-umbrella.h"
+
+  export *
+  module * { export * }
+}

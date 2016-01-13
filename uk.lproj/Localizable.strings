@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  ezlang
+
+  Created by mac on 06.01.16.
+  Copyright © 2016 5wheels. All rights reserved.
+*/
+
+"profile" = "Профіль";
+"new_game" = "Старт";
+"settings" = "Налаштування";
+"help" = "Довідка";
+"feedback" = "Відгук";
+"field_size" = "Розмір Поля";
+"translation_direction" = "Напрям Перекладу";
+"sound" = "Звук";
+"interface_language" = "Мова Інтерфейсу";
+"ukr_to_eng" = "УКР -> АНГЛ";
+"eng_to_ukr" = "АНГЛ -> УКР";
+"on" = "Вкл";
+"off" = "Викл";
+"ukr_interface" = "Українська";
+"eng_interface" = "Англійська";

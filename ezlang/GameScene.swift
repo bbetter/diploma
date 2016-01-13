@@ -9,109 +9,133 @@
 import Foundation
 import SpriteKit
 
-class GameScene : SKScene{
-    var level: Level!
-    
-    let TileWidth: CGFloat = 50
-    let TileHeight: CGFloat = 50
-    
+class GameScene: SKScene {
+    //var level: GameLevel!
+
     let gameLayer = SKNode()
     let lettersLayer = SKNode()
-    
-    var swipeFromColumn: Int? = nil
-    var swipeFromRow: Int? = nil
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder) is not used in this app")
     }
-    
+
     override init(size: CGSize) {
         super.init(size: size)
-        
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        
-        let background = SKSpriteNode(imageNamed: "gameplay_bgNEW")
-        addChild(background)
-        
-        addChild(gameLayer)
-        
-        let layerPosition = CGPoint(
-            x: -TileWidth * CGFloat(NumColumns) / 2,
-            y: -TileHeight * CGFloat(NumRows) / 2)
-        
-        lettersLayer.position = layerPosition
+
+        let background = SKSpriteNode(imageNamed: "background")
+        lettersLayer.position = CGPoint(
+        x: -70 * CGFloat(5) / 2,
+                y: -70 * CGFloat(5) / 2)
+
         gameLayer.addChild(lettersLayer)
+        addChild(background)
+        addChild(gameLayer)
     }
-    
-    func addSpritesForLetters(letters: Set<Letter>) {
-        lettersLayer.removeAllChildren()
+
+    func updateLevelLetters(letters: Set<LetterNode>) {
         for letter in letters {
-            let sprite = SKSpriteNode(texture: SKTexture(imageNamed: "word_block"),size: CGSize(width: 50,height: 50))
-            sprite.colorBlendFactor = 1
-            sprite.color = UIColor.whiteColor()
-            let label : SKLabelNode = SKLabelNode()
-            label.fontColor = UIColor.blackColor()
-            label.fontSize = CGFloat(15)
-            label.text = letter.letter
-            sprite.addChild(label)
-            sprite.position = pointForColumn(letter.column, row:letter.row)
+            let sprite = LetterNode(row:0, column:0, character: "C")
             lettersLayer.addChild(sprite)
-        
-            letter.sprite = sprite
         }
     }
-    
+
     func pointForColumn(column: Int, row: Int) -> CGPoint {
         return CGPoint(
-            x: CGFloat(column)*TileWidth + TileWidth/2,
-            y: CGFloat(row)*TileHeight + TileHeight/2)
+        x: CGFloat(column) * 70 + 70 / 2,
+                y: CGFloat(row) * 70 + 70 / 2)
     }
-    
-    func convertPoint(point: CGPoint) -> (success: Bool, row: Int, column: Int) {
-        if point.x >= 0 && point.x < CGFloat(NumColumns)*TileWidth &&
-            point.y >= 0 && point.y < CGFloat(NumRows)*TileHeight {
-                return (true, Int(point.x / TileWidth), Int(point.y / TileHeight))
+
+    func convertPoint(point: CGPoint) -> (success:Bool, row:Int, column:Int) {
+        if point.x >= 0 && point.x < CGFloat(5) * 70 &&
+                point.y >= 0 && point.y < CGFloat(5) * 70 {
+            var rect = lettersLayer.frame
+
+            return (true, Int((point.y - rect.origin.y) / 70), Int(point.x / 70))
         } else {
             return (false, 0, 0)  // invalid location
         }
     }
-    
-    var swipedLetters = [Letter]()
-   
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+
+    var swipedLetters = [LetterNode]()
+    var currentLetter: LetterNode?
+
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let touch = touches.first as UITouch!
         let location = touch.locationInNode(lettersLayer)
-        // 2
         let (success, row, column) = convertPoint(location)
         if success {
-            // 3
-            if let letter = level.letterAtColumn(row,column: column) {
-                if(!swipedLetters.contains(letter)){
-                    letter.sprite?.color = UIColor.yellowColor()
-                    
-                    swipedLetters.append(letter)
-                }
+//            if let letter = level.letterAtColumn(row, column: column) {
+//                if (letter != currentLetter) {
+//                    currentLetter = letter
+//                    if (!swipedLetters.contains(letter)) {
+//                        letter.sprite?.color = UIColor.yellowColor()
+//                        swipedLetters.append(letter)
+//                    } else {
+//                        let allLetters = try! swipedLetters.map({ $0.sprite })
+//                        let lettersToBeRemoved = allLetters[swipedLetters.indexOf(letter)! ..< swipedLetters.count]
+//                        lettersToBeRemoved.forEach({ x in x!.color = UIColor.whiteColor() })
+//                        swipedLetters.removeRange(swipedLetters.indexOf(letter)! ..< swipedLetters.count)
+//                    }
+//                }
+//            }
+//        }
+        }
+    }
+
+//        func isARound(letter: Letter) -> Bool {
+//            return (letter.row - 1 == currentLetter!.row - 1 || letter.row + 1 == currentLetter!.row + 1) ||
+//                    (letter.column - 1 == currentLetter!.column - 1 || letter.column + 1 == currentLetter!.column + 1)
+//        }
+
+        override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+            let touch = touches.first as UITouch!
+            let location = touch.locationInNode(lettersLayer)
+            let locationInScene = touch.locationInNode(self)
+            let (success, row, column) = convertPoint(location)
+            if success {
+
+//            if let letter = level.letterAtColumn(row, column: column) {
+//                if (letter != currentLetter) {
+//
+//                    if (isARound(letter)) {
+//                        currentLetter = letter
+//                        if (!swipedLetters.contains(letter)) {
+//                            letter.color = UIColor.yellowColor()
+//                            swipedLetters.append(letter)
+//                        } else {
+//                            let allLetters = try! swipedLetters.map({ $0.sprite })
+//                            let lettersToBeRemoved = allLetters[swipedLetters.indexOf(letter)! ..< swipedLetters.count]
+//                            lettersToBeRemoved.forEach({ x in x!.color = UIColor.whiteColor() })
+//                            swipedLetters.removeRange(swipedLetters.indexOf(letter)! ..< swipedLetters.count)
+//                        }
+//                    } else {
+//                        swipedLetters.removeAll()
+//
+//                        let allLetters = try! swipedLetters.map({ $0.sprite })
+//                        try! allLetters.forEach({ $0?.color = UIColor.whiteColor() })
+//                    }
+//
+//                }
+//            }
             }
         }
 
+        override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+            //     currentLetter = nil
+            //     var i = 0
+//        try! swipedLetters.forEach({
+//            letter in
+//            print("row:\(letter.row);column:\(letter.column);letter:\(letter.letter)")
+//            letter.sprite?.runAction(SKAction.sequence([
+//                    SKAction.moveTo(CGPoint(x: 50.0 * CGFloat(i), y: 0), duration: 0.5),
+//                    SKAction.runBlock({
+//                        self.updateLevelLetters(self.level.shuffle())
+//                    })
+//            ]))
+//            letter.sprite?.color = UIColor.greenColor()
+//            letter.sprite?.zPosition = 2
+//            i++
+//        }
+        }
     }
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        // 1
-        var i = 0
-
-        swipedLetters.forEach({
-            print("row:\($0.row);column:\($0.column);letter:\($0.letter)")
-            $0.sprite?.runAction( SKAction.sequence([
-                SKAction.moveTo(CGPoint(x: 50.0 * CGFloat(i),y: 0), duration:1.0),
-                SKAction.runBlock({
-                    self.addSpritesForLetters(self.level.shuffle())
-                })
-                ]))
-            $0.sprite?.color = UIColor.greenColor()
-            $0.sprite?.zPosition = 2
-            i++
-            })
-    }
-
-    
-  }

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  ezlang
+
+  Created by mac on 06.01.16.
+  Copyright © 2016 5wheels. All rights reserved.
+*/
+
+"new_game" = "New Game";
+"profile" = "Profile";
+"settings" = "Settings";
+"help" = "Help";
+"feedback" = "Feedback";

@@ -13,7 +13,6 @@ import RealmSwift
 
 class GameViewController: UIViewController {
     var scene: GameScene?
-    //var level: GameLevel!
 
     override func prefersStatusBarHidden() -> Bool {
         return true
@@ -41,5 +40,4 @@ class GameViewController: UIViewController {
         
         skView.presentScene(scene)
     }
-
 }

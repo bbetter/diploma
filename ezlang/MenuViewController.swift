@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-typealias TupleTitle = (String?,String?,String?)
+typealias TupleTitles = (String?,String?,String?)
+
 enum MenuType{
     case MainMenu
     case SettingsMenu
@@ -29,7 +30,7 @@ enum MenuType{
         }
     }
     
-    func getMenuItemsTitles()->[TupleTitle]{
+    func getMenuItemsTitles()->[TupleTitles]{
         switch(self){
         case .MainMenu:
             return [
@@ -69,7 +70,7 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.estimatedRowHeight = 100
+        tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableViewAutomaticDimension
     }
     
@@ -85,6 +86,10 @@ class MenuViewController: UIViewController {
 
 extension MenuViewController: UITableViewDataSource,UITableViewDelegate{
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor.clearColor()
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -97,6 +102,14 @@ extension MenuViewController: UITableViewDataSource,UITableViewDelegate{
         menuType = type
         self.backButton.animateVisibility(menuType != .MainMenu)
         self.tableView.reloadWithFade()
+    }
+    
+    func openController(name:String){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier(name)
+        vc.modalPresentationStyle = .FullScreen
+        vc.modalTransitionStyle = .PartialCurl
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -114,11 +127,7 @@ extension MenuViewController: UITableViewDataSource,UITableViewDelegate{
                 break;
             case 1:
                 cell.buttonClickAction = {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewControllerWithIdentifier("profileViewController")
-                    vc.modalPresentationStyle = .FullScreen
-                    vc.modalTransitionStyle = .PartialCurl
-                    self.presentViewController(vc, animated: true, completion: nil)
+                    self.openController("profileViewController")
                 }
                 break;
             case 2:
@@ -126,13 +135,35 @@ extension MenuViewController: UITableViewDataSource,UITableViewDelegate{
                     self.goTo(.SettingsMenu)
                 }
             case 3:
+                cell.buttonClickAction = {
+                    self.openController("helpViewController")
+                }
                 break;
             case 4:
+                cell.buttonClickAction = {
+                   self.openController("feedbackController")
+                }
                 break;
             default:
                 break;
             }
             return cell;
+        case .ModeMenu:
+            let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell",forIndexPath: indexPath) as! ButtonCell
+            cell.buttonTitle = tuple.0
+            cell.buttonClickAction = {
+                self.goTo(.TypeMenu)
+            }
+            return cell;
+            break;
+        case.TypeMenu:
+            let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell",forIndexPath: indexPath) as! ButtonCell
+            cell.buttonTitle = tuple.0
+            cell.buttonClickAction = {
+                self.openController("groupsTableViewControler")
+            }
+            return cell
+            break;
         case .SettingsMenu:
             let cell = tableView.dequeueReusableCellWithIdentifier("SettingCell",forIndexPath: indexPath) as! SettingCell
             let (title,left,right) = tuple

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class NetworkManager{
     let host:String = "ezlang.herokuapp.com/api/"
@@ -43,9 +44,16 @@ class NetworkManager{
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         return request
     }
-    
+  
     func update(params:[String:String]?=[:],resultCallback:(NSData?,NSURLResponse?,NSError?)->Void){
         let request = prepareRequest(.Get,path: "update", params: params);
+        let dataTask = session.dataTaskWithRequest(request,completionHandler: resultCallback)
+        dataTask.resume()
+    }
+    
+    func getGroups(resultCallback:(NSData?,NSURLResponse?,NSError?)->Void){
+        let request = prepareRequest(.Get,path:"groups", params:nil)
+        
         let dataTask = session.dataTaskWithRequest(request,completionHandler: resultCallback)
         dataTask.resume()
     }

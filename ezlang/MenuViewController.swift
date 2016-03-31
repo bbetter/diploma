@@ -30,6 +30,7 @@ enum MenuType{
         }
     }
     
+    
     func getMenuItemsTitles()->[TupleTitles]{
         switch(self){
         case .MainMenu:
@@ -107,7 +108,7 @@ extension MenuViewController: UITableViewDataSource,UITableViewDelegate{
     func openController(name:String){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier(name)
-        vc.modalPresentationStyle = .FullScreen
+//        vc.modalPresentationStyle = .FullScreen
         vc.modalTransitionStyle = .PartialCurl
         self.presentViewController(vc, animated: true, completion: nil)
     }
@@ -117,7 +118,7 @@ extension MenuViewController: UITableViewDataSource,UITableViewDelegate{
         
         switch(menuType){
         case .MainMenu:
-            let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell",forIndexPath: indexPath) as! ButtonCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("Button Cell",forIndexPath: indexPath) as! ButtonCell
             cell.buttonTitle = tuple.0
             switch(indexPath.row){
             case 0:
@@ -149,23 +150,23 @@ extension MenuViewController: UITableViewDataSource,UITableViewDelegate{
             }
             return cell;
         case .ModeMenu:
-            let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell",forIndexPath: indexPath) as! ButtonCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("Button Cell",forIndexPath: indexPath) as! ButtonCell
             cell.buttonTitle = tuple.0
             cell.buttonClickAction = {
                 self.goTo(.TypeMenu)
             }
             return cell;
-            break;
         case.TypeMenu:
-            let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCell",forIndexPath: indexPath) as! ButtonCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("Button Cell",forIndexPath: indexPath) as! ButtonCell
             cell.buttonTitle = tuple.0
             cell.buttonClickAction = {
-                self.openController("groupsTableViewControler")
+                let vc = self.getViewController("Main", controllerName: "groupsViewController", transitionStyle: .FlipHorizontal)
+                self.presentViewController(vc, animated: true, completion: nil)
+//                self.openController("groupsViewController")
             }
             return cell
-            break;
         case .SettingsMenu:
-            let cell = tableView.dequeueReusableCellWithIdentifier("SettingCell",forIndexPath: indexPath) as! SettingCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("Setting Cell",forIndexPath: indexPath) as! SettingCell
             let (title,left,right) = tuple
             
             cell.optionTitle = title!
@@ -183,10 +184,6 @@ extension MenuViewController: UITableViewDataSource,UITableViewDelegate{
                 NSLog("%i",index)
             }
             return cell
-        case .ModeMenu:
-            return tableView.dequeueReusableCellWithIdentifier("SettingCell",forIndexPath: indexPath) as! SettingCell
-        case .TypeMenu:
-            return tableView.dequeueReusableCellWithIdentifier("SettingCell",forIndexPath: indexPath) as! SettingCell
         }
     }
 

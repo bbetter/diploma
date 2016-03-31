@@ -9,7 +9,10 @@
 import Foundation
 import UIKit
 
-extension UIButton{
+/**
+*
+*/
+extension UIView{
     
     func animateVisibility(visible:Bool) {
         UIView.animateWithDuration(0.7,
@@ -22,6 +25,27 @@ extension UIButton{
                 }
         })
     }
+}
+
+extension UIViewController{
+    
+    func getViewController(storyBoardName:String,controllerName:String,transitionStyle:UIModalTransitionStyle)->UIViewController{
+        let storyboard = UIStoryboard(name: storyBoardName, bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier(controllerName)
+        vc.modalPresentationStyle = .FullScreen
+        vc.modalTransitionStyle = transitionStyle
+        return vc
+    }
+    
+    func openController(storyBoardName:String,controllerName:String,transitionStyle:UIModalTransitionStyle){
+        let vc = getViewController(storyBoardName, controllerName: controllerName, transitionStyle: transitionStyle)
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    
+    func openWithCurl(controllerName:String){
+        openController("Main", controllerName: controllerName,transitionStyle: .PartialCurl)
+    }
+    
 }
 
 extension UIImageView {
@@ -64,7 +88,7 @@ extension UISegmentedControl{
         self.setTitleTextAttributes(attr as [NSObject : AnyObject], forState: state)
     }
     
-    // create a 1x1 image with this color
+    // create a 1x1 image with color
     private func imageWithColor(color: UIColor) -> UIImage {
         let rect = CGRectMake(0.0, 0.0, 1.0, 1.0)
         UIGraphicsBeginImageContext(rect.size)

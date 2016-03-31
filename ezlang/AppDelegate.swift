@@ -7,15 +7,54 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    lazy var database = Database.sharedInstance
+    lazy var api = Api.sharedInstance
+    lazy var game = Game()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let config = Realm.Configuration(
+            // Set the new schema version. This must be greater than the previously used
+            // version (if you've never set a schema version before, the version is 0).
+            schemaVersion: 1,
+            
+            // Set the block which will be called automatically when opening a Realm with
+            // a schema version lower than the one set above
+            migrationBlock: { migration, oldSchemaVersion in
+                // We haven’t migrated anything yet, so oldSchemaVersion == 0
+                if (oldSchemaVersion < 1) {
+                    // Nothing to do!
+                    // Realm will automatically detect new properties and removed properties
+                    // And will update the schema on disk automatically
+                }
+        })
+        Realm.Configuration.defaultConfiguration = config
+       
+        api.fetchPack({ isSuccessful,resultObject in
+            var dict = resultObject as Dictionary<String, AnyObject>!
+
+            let groupItemsArray = dict["mGroupInsert"] as! [[String : AnyObject]]
+            let levelItemsArray = dict["mLevelInsert"] as! [[String : AnyObject]]
+            var groups = [Group]()
+            var levels = [Level]()
+            groupItemsArray.forEach({
+                item in
+                 groups.append(Group.fromJson(item))
+            })
+            levelItemsArray.forEach({
+                item in
+                 levels.append(Level.fromJson(item))
+            })
+            self.database.saveToDatabase(groups)
+            self.database.saveToDatabase(levels)
+        })
         return true
     }
 
@@ -35,10 +74,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-//        NetworkManager.update(({
-//            data,response,error in
-//            print(data)
-//        }))
     }
 
     func applicationWillTerminate(application: UIApplication) {

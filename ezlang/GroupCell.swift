@@ -14,7 +14,7 @@ class GroupCell :UITableViewCell{
     @IBOutlet weak var groupImageView: UIImageView?
     @IBOutlet weak var nameLabel: UILabel?
     @IBOutlet weak var pointsLabel: UILabel?
-    @IBOutlet weak var dictionary: UIImageView!
-    @IBOutlet weak var disprogress: UIImageView!
-
+    
+    @IBOutlet weak var dictionary: UIButton!
+    @IBOutlet weak var disprogress: UIButton!
 }

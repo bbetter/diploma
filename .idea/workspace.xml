@@ -2,51 +2,377 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="255e9ffc-8979-419f-b0ca-9bf76250de34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/background.imageset/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/logo.imageset/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/menu_bg.imageset/menu_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/futurearound_bold.TTF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/en.lproj/Localizable.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/Default-Portrait.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/background.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/character.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/logo.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/menu_bg.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/CommonEnumerations.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/CommonExtensions.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/DatabaseHelper.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/MenuButtonCell.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/MenuScene.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/MenuViewController.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/NetworkManager.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/SKButton.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/SKMenuButton.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/SettingCell.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/en.lproj/Localizable.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/Group.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/Level.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/Task.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/User.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/ezlang-Bridging-Header.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/sprites/LetterNode.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uk.lproj/Localizable.strings" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/Assets.xcassets/gameplay_bgNEW.imageset/Contents.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/Assets.xcassets/gameplay_bgNEW.imageset/gameplay_bgNEW.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/Assets.xcassets/word_block.imageset/Contents.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/Assets.xcassets/word_block.imageset/word_block.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/Assets.xcassets/word_block.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/Base.lproj/LaunchScreen.storyboard" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/Letter.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/Level.swift" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ezlang/Array2D.swift" afterPath="$PROJECT_DIR$/ezlang/models/util/Array2D.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/arr24.imageset/arr24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Api.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/arr24.imageset/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/BackController.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/Database.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/DictionaryCell.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/DictionaryViewController.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/GroupsViewController.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/LevelFactory.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/RealmExtensions.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/SpriteKitUtils.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/GameGrid.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/game/Game.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/game/Task.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ezlang/models/util/TaskFactory.swift" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMAnalytics.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMArray_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectSchema_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObject_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObservation.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMPrefix.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMQueryUtil.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealmUtil.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealm_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMSchema_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMSwiftBridgingHeader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMSwiftSupport.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMUpdateChecker.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMUtil.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/alloc.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/alloc_slab.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/array.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/array_basic.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/array_basic_tpl.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/array_binary.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/array_blob.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/array_blobs_big.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/array_integer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/array_string.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/array_string_long.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/binary_data.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/binding_context.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/bptree.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_backlink.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_binary.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_fwd.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_link.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_linkbase.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_linklist.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_mixed.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_mixed_tpl.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_string.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_string_enum.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_table.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_tpl.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_type.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/column_type_traits.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/commit_log.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/data_type.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/datetime.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/descriptor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/descriptor_fwd.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/disable_sync_to_disk.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/exceptions.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/external_commit_helper.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/group.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/group_shared.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/group_writer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/handover_defs.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/history.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/impl/array_writer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/impl/destroy_guard.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/impl/input_stream.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/impl/output_stream.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/impl/sequential_getter.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/impl/simulated_failure.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/impl/transact_log.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/importer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/index_set.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/index_string.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/lang_bind_helper.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/link_view.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/link_view_fwd.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/mixed.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/object_schema.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/object_store.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/owned_data.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/property.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/query.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/query_conditions.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/query_engine.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/query_expression.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/realm_nmmintrin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/replication.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/results.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/row.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/schema.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/shared_realm.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/spec.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/string_data.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/table.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/table_accessors.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/table_basic.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/table_basic_fwd.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/table_macros.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/table_ref.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/table_view.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/table_view_basic.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/transact_log_handler.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/unicode.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/assert.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/basic_system_errors.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/bind_ptr.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/buffer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/config.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/encrypted_file_mapping.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/features.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/file.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/file_mapper.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/inspect.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/logger.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/memory_stream.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/meta.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/misc_errors.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/miscellaneous.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/network.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/optional.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/platform_specific_condvar.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/priority_queue.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/safe_int_ops.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/shared_ptr.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/string_buffer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/terminate.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/thread.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/tuple.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/type_list.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/type_traits.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/uri.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/util/utf8.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/utilities.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/version.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/views.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMAnalytics.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMArray_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMObjectSchema_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMObject_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMObservation.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMQueryUtil.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMRealmUtil.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMRealm_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMSchema_Private.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMUpdateChecker.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMUtil.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/alloc.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/alloc_slab.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/array.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/array_basic.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/array_basic_tpl.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/array_binary.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/array_blob.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/array_blobs_big.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/array_integer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/array_string.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/array_string_long.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/binary_data.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/binding_context.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/bptree.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_backlink.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_binary.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_fwd.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_link.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_linkbase.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_linklist.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_mixed.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_mixed_tpl.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_string.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_string_enum.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_table.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_tpl.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_type.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/column_type_traits.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/commit_log.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/data_type.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/datetime.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/descriptor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/descriptor_fwd.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/disable_sync_to_disk.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/exceptions.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/external_commit_helper.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/group.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/group_shared.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/group_writer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/handover_defs.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/history.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/impl/array_writer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/impl/destroy_guard.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/impl/input_stream.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/impl/output_stream.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/impl/sequential_getter.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/impl/simulated_failure.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/impl/transact_log.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/importer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/index_set.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/index_string.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/lang_bind_helper.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/link_view.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/link_view_fwd.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/mixed.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/object_schema.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/object_store.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/owned_data.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/property.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/query.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/query_conditions.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/query_engine.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/query_expression.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/realm_nmmintrin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/replication.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/results.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/row.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/schema.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/shared_realm.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/spec.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/string_data.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/table.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/table_accessors.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/table_basic.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/table_basic_fwd.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/table_macros.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/table_ref.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/table_view.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/table_view_basic.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/transact_log_handler.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/unicode.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/assert.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/basic_system_errors.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/bind_ptr.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/buffer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/config.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/encrypted_file_mapping.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/features.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/file.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/file_mapper.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/inspect.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/logger.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/memory_stream.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/meta.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/misc_errors.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/miscellaneous.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/network.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/optional.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/platform_specific_condvar.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/priority_queue.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/safe_int_ops.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/shared_ptr.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/string_buffer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/terminate.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/thread.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/tuple.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/type_list.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/type_traits.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/uri.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/util/utf8.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/utilities.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/version.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/views.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/Base.lproj/Main.storyboard" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/DatabaseHelper.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/GroupsTableViewController.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ezlang/NetworkManager.swift" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/core/librealm-ios.a" afterPath="$PROJECT_DIR$/Pods/Realm/core/librealm-ios.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/diploma.iml" afterPath="$PROJECT_DIR$/.idea/diploma.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMAccessor.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMAccessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMArray.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMArray.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMArray_Private.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMArray_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMCollection.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMCollection.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMConstants.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMConstants.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMDefines.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMDefines.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMListBase.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMListBase.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMMigration.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMMigration.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMMigration_Private.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMMigration_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObject.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectBase.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectBase.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectBase_Dynamic.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectBase_Dynamic.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectSchema.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectSchema.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectSchema_Private.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectSchema_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectStore.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObjectStore.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObject_Private.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMObject_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMOptionalBase.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMOptionalBase.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMPlatform.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMPlatform.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMProperty.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMProperty.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMProperty_Private.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMProperty_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealm.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealm.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealmConfiguration.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealmConfiguration.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealmConfiguration_Private.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealmConfiguration_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealm_Dynamic.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealm_Dynamic.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealm_Private.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMRealm_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMResults.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMResults.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMResults_Private.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMResults_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMSchema.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMSchema.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMSchema_Private.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/RLMSchema_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/Realm.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Realm/realm/Realm.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/impl/apple/external_commit_helper.cpp" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/impl/apple/external_commit_helper.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/impl/transact_log_handler.cpp" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/impl/transact_log_handler.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/object_store.cpp" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/object_store.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/results.cpp" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/results.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/shared_realm.cpp" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/ObjectStore/shared_realm.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMAccessor.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMAccessor.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMArray.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMArray.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMArrayLinkView.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMArrayLinkView.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMMigration.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMMigration.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMObjectBase.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMObjectBase.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMObjectSchema.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMObjectSchema.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMOptionalBase.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMOptionalBase.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMProperty.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMProperty.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMQueryUtil.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMQueryUtil.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMRealm.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMRealm.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMRealmUtil.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMRealmUtil.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMResults.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMResults.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMSchema.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMSchema.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/Realm/RLMUtil.mm" afterPath="$PROJECT_DIR$/Pods/Realm/Realm/RLMUtil.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/build.sh" afterPath="$PROJECT_DIR$/Pods/Realm/build.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMAccessor.h" afterPath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMAccessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMArray.h" afterPath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMArray.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMCollection.h" afterPath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMCollection.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMDefines.h" afterPath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMDefines.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMObject_Private.h" afterPath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMObject_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMRealm.h" afterPath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMRealm.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMRealm_Private.h" afterPath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMRealm_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMResults.h" afterPath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMResults.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMSchema_Private.h" afterPath="$PROJECT_DIR$/Pods/Realm/include/realm/RLMSchema_Private.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Error.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Error.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/List.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/List.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Object.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Object.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/ObjectSchema.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/ObjectSchema.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Property.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Property.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Realm.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Realm.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/RealmCollectionType.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/RealmCollectionType.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Results.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Results.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Schema.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Schema.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/SortDescriptor.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/SortDescriptor.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/SwiftVersion.swift" afterPath="$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/SwiftVersion.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/RealmSwift/build.sh" afterPath="$PROJECT_DIR$/Pods/RealmSwift/build.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Realm/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm/Realm.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Realm/Realm.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RealmSwift/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/RealmSwift/Info.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ezlang.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/AppDelegate.swift" afterPath="$PROJECT_DIR$/ezlang/AppDelegate.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/ezlang/Assets.xcassets/AppIcon.appiconset/Contents.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/ezlang/Base.lproj/Main.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/CommonExtensions.swift" afterPath="$PROJECT_DIR$/ezlang/CommonExtensions.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/FeedbackController.swift" afterPath="$PROJECT_DIR$/ezlang/FeedbackController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/GameScene.swift" afterPath="$PROJECT_DIR$/ezlang/GameScene.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/GameViewController.swift" afterPath="$PROJECT_DIR$/ezlang/GameViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/GroupCell.swift" afterPath="$PROJECT_DIR$/ezlang/GroupCell.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/Info.plist" afterPath="$PROJECT_DIR$/ezlang/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/MenuViewController.swift" afterPath="$PROJECT_DIR$/ezlang/MenuViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/ProfileViewController.swift" afterPath="$PROJECT_DIR$/ezlang/ProfileViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/UiExtensions.swift" afterPath="$PROJECT_DIR$/ezlang/UiExtensions.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/models/Group.swift" afterPath="$PROJECT_DIR$/ezlang/models/Group.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/models/Level.swift" afterPath="$PROJECT_DIR$/ezlang/models/Level.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/models/User.swift" afterPath="$PROJECT_DIR$/ezlang/models/User.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/models/sprites/LetterNode.swift" afterPath="$PROJECT_DIR$/ezlang/models/sprites/LetterNode.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ezlang/models/util/Array2D.swift" afterPath="$PROJECT_DIR$/ezlang/models/util/Array2D.swift" />
     </list>
     <ignored path="diploma.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,99 +387,109 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulatoriPhone_6s_Plus_9.2_x86_64_1" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulatoriPhone_6_9.3_x86_64_1" />
   <component name="FavoritesManager">
     <favorites_list name="ezlang" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameScene.swift" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UiExtensions.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ezlang/UiExtensions.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="93" column="31" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameScene.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ezlang/GameScene.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="24" selection-start-line="91" selection-start-column="12" selection-end-line="95" selection-end-column="24" />
-              <folding>
-                <marker date="1452069649000" expanded="true" signature="3474:4675" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuScene.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ezlang/MenuScene.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61538464">
-              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+            <state relative-caret-position="90">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpriteKit.SKEffectNode.swift" pinned="false" current-in-tab="false">
-        <entry file="mock:///SpriteKit.SKEffectNode.swift">
+      <file leaf-file-name="GroupsViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ezlang/GroupsViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.7777777">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="390">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ezlang/GameViewController.swift">
+      <file leaf-file-name="ButtonCell.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ezlang/ButtonCell.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuButtonCell.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ezlang/MenuButtonCell.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingCell.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ezlang/SettingCell.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SKMenuButton.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ezlang/SKMenuButton.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ezlang/MenuViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SKButton.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ezlang/SKButton.swift">
+      <file leaf-file-name="DictionaryCell.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ezlang/DictionaryCell.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Podfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Podfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Info.plist" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ezlangUITests/Info.plist">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Group.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ezlang/models/Group.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+              <folding>
+                <element signature="e#90#107#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserProgressControl.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ezlang/UserProgressControl.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="40" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameGrid.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ezlang/models/GameGrid.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -172,24 +508,46 @@
         <option value="$PROJECT_DIR$/ezlang/models/SceneLevel.swift" />
         <option value="$PROJECT_DIR$/ezlang/models/Letter.swift" />
         <option value="$PROJECT_DIR$/ezlang/models/GameLevel.swift" />
-        <option value="$PROJECT_DIR$/ezlang/models/User.swift" />
         <option value="$PROJECT_DIR$/ezlang/LevelFactory.swift" />
         <option value="$PROJECT_DIR$/ezlang/JsonHelper.swift" />
-        <option value="$PROJECT_DIR$/ezlang/CommonExtensions.swift" />
-        <option value="$PROJECT_DIR$/ezlang/NetworkManager.swift" />
-        <option value="$PROJECT_DIR$/ezlang/models/Group.swift" />
-        <option value="$PROJECT_DIR$/ezlang/models/sprites/LetterNode.swift" />
-        <option value="$PROJECT_DIR$/ezlang/GameScene.swift" />
-        <option value="$PROJECT_DIR$/ezlang/AppDelegate.swift" />
-        <option value="$PROJECT_DIR$/ezlang/models/Level.swift" />
-        <option value="$PROJECT_DIR$/ezlang/DatabaseHelper.swift" />
-        <option value="$PROJECT_DIR$/ezlang/MenuViewController.swift" />
         <option value="$PROJECT_DIR$/ezlang/MenuTableViewController.swift" />
         <option value="$PROJECT_DIR$/ezlang/SettingCell.swift" />
-        <option value="$PROJECT_DIR$/ezlang/GameViewController.swift" />
         <option value="$PROJECT_DIR$/ezlang/SKButton.swift" />
         <option value="$PROJECT_DIR$/ezlang/SKMenuButton.swift" />
         <option value="$PROJECT_DIR$/ezlang/MenuScene.swift" />
+        <option value="$PROJECT_DIR$/ezlang/NetworkManager.swift" />
+        <option value="$PROJECT_DIR$/ezlang/Grid.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/Grid.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/Game.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/TaskRecord.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/game/TaskRecord.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/Language.swift" />
+        <option value="$PROJECT_DIR$/ezlang/DatabaseHelper.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/util/LevelFabric.swift" />
+        <option value="$PROJECT_DIR$/ezlang/Data.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/util/TaskFabric.swift" />
+        <option value="$PROJECT_DIR$/ezlang/CommonExtensions.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/User.swift" />
+        <option value="$PROJECT_DIR$/ezlang/GameViewController.swift" />
+        <option value="$PROJECT_DIR$/ezlang/SpriteKitExtensions.swift" />
+        <option value="$PROJECT_DIR$/ezlang/SpriteKitUtils.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/util/TaskFactory.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/game/Task.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/game/Game.swift" />
+        <option value="$PROJECT_DIR$/ezlang/GameScene.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/sprites/LetterNode.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/GameGrid.swift" />
+        <option value="$PROJECT_DIR$/ezlang/MenuViewController.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/util/Array2D.swift" />
+        <option value="$PROJECT_DIR$/ezlang/GroupsViewController.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/Level.swift" />
+        <option value="$PROJECT_DIR$/ezlang/Api.swift" />
+        <option value="$PROJECT_DIR$/ezlang/RealmExtensions.swift" />
+        <option value="$PROJECT_DIR$/ezlang/Database.swift" />
+        <option value="$PROJECT_DIR$/ezlang/models/Group.swift" />
+        <option value="$PROJECT_DIR$/ezlang/DictionaryViewController.swift" />
+        <option value="$PROJECT_DIR$/ezlang/AppDelegate.swift" />
+        <option value="$PROJECT_DIR$/ezlang/UserProgressControl.swift" />
       </list>
     </option>
   </component>
@@ -201,8 +559,8 @@
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="808" />
+    <option name="width" value="1436" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -239,20 +597,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Pods" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pods" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frameworks" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -335,25 +679,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Assets.xcassets" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ezlang" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ezlang" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,6 +715,24 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ezlang" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ezlang" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
@@ -411,7 +755,51 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sprites" />
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ezlang" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ezlang" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="realm" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ezlang" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ezlang" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -433,24 +821,6 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ezlang" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ezlang" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cells" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Cidr.FilesView" />
@@ -464,7 +834,7 @@
     <property name="OverrideImplement.combined" value="true" />
   </component>
   <component name="RunManager" selected="Application.ezlang">
-    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="ezlang" TARGET_NAME="ezlang" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ezlang" RUN_TARGET_NAME="ezlang" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ezlang" TARGET_NAME="ezlang" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ezlang" RUN_TARGET_NAME="ezlang" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
@@ -474,15 +844,16 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="ezlang" TARGET_NAME="ezlang" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ezlang" TARGET_NAME="ezlang" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="ezlang" TARGET_NAME="ezlangTests" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ezlang" TARGET_NAME="ezlangTests" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -493,45 +864,56 @@
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="ezlang" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="ezlang" TARGET_NAME="ezlang" CONFIG_NAME="Debug" SCHEME_NAME="ezlang" RUN_TARGET_PROJECT_NAME="ezlang" RUN_TARGET_NAME="ezlang" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
-      <envs />
-      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
-        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
-      </EXTENSION>
-      <method />
-    </configuration>
-    <configuration default="false" name="Pods-ezlang" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Pods" TARGET_NAME="Pods-ezlang" CONFIG_NAME="Debug" SCHEME_NAME="Pods-ezlang" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="ezlang" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ezlang" TARGET_NAME="ezlang" CONFIG_NAME="Debug" SCHEME_NAME="ezlang" RUN_TARGET_PROJECT_NAME="ezlang" RUN_TARGET_NAME="ezlang" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
       <method />
     </configuration>
-    <configuration default="false" name="Realm" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Pods" TARGET_NAME="Realm" CONFIG_NAME="Debug" SCHEME_NAME="Realm" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="Pods-ezlang" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-ezlang" CONFIG_NAME="Debug" SCHEME_NAME="Pods-ezlang" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
       <method />
     </configuration>
-    <configuration default="false" name="RealmSwift" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Pods" TARGET_NAME="RealmSwift" CONFIG_NAME="Debug" SCHEME_NAME="RealmSwift" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="Realm" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Realm" CONFIG_NAME="Debug" SCHEME_NAME="Realm" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
       <method />
     </configuration>
-    <list size="4">
+    <configuration default="false" name="RealmSwift" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="RealmSwift" CONFIG_NAME="Debug" SCHEME_NAME="RealmSwift" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-ezlangTests" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-ezlangTests" CONFIG_NAME="Debug" SCHEME_NAME="Pods-ezlangTests" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ezlang" />
       <item index="1" class="java.lang.String" itemvalue="Application.Pods-ezlang" />
       <item index="2" class="java.lang.String" itemvalue="Application.Realm" />
       <item index="3" class="java.lang.String" itemvalue="Application.RealmSwift" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Pods-ezlangTests" />
     </list>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -540,32 +922,33 @@
       <changelist id="255e9ffc-8979-419f-b0ca-9bf76250de34" name="Default" comment="" />
       <created>1449758551641</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1449758551641</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="808" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1436" height="877" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17638889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23467967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746956" sideWeight="0.475" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34529704" sideWeight="0.48187634" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270809" sideWeight="0.5181237" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279703" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39973083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39851484" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279703" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -605,235 +988,31 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/ezlang/GameScene.swift</url>
-          <line>86</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/ezlang/models/util/TaskFactory.swift</url>
+          <line>11</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ezlang/GameScene.swift</url>
-          <line>51</line>
-          <option name="timeStamp" value="8" />
+          <line>57</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ezlang/DictionaryViewController.swift</url>
+          <line>59</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="54" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="AppleRunConfiguration">
-        <watch expression="currentLetter!.column" language="Swift" />
-        <watch expression="currentLetter!.row" language="Swift" />
-        <watch expression="letter.row" language="Swift" />
-        <watch expression="letter.column" language="Swift" />
-        <watch expression="rect.origin" language="Swift" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ezlang/GameScene.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <marker date="1452069649000" expanded="true" signature="3474:4675" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="appcode.project-settings://18372c33">
-      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/util/Array2D.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/GameViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/Level.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/Group.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/GameScene.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <marker date="1452069649000" expanded="true" signature="3474:4675" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="appcode.project-settings://18372c33">
-      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/util/Array2D.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/GameViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/Level.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/GameScene.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <marker date="1452069649000" expanded="true" signature="3474:4675" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="appcode.project-settings://18372c33">
-      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/util/Array2D.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/GameViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/Level.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/GameScene.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1452069649000" expanded="true" signature="3474:4675" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="appcode.project-settings://18372c33">
-      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/util/Array2D.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/GameScene.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
-          <folding>
-            <marker date="1452069649000" expanded="true" signature="3474:4675" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="appcode.project-settings://18372c33">
-      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/GameScene.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
-          <folding>
-            <marker date="1452069649000" expanded="true" signature="3474:4675" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="appcode.project-settings://18372c33">
-      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Podfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35664335">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,171 +1023,320 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ezlangUITests/ezlangUITests.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/Realm/include/Realm/table_basic.hpp" />
+    <entry file="file://$PROJECT_DIR$/ezlang/SettingCell.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/MenuScene.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/NetworkManager.swift" />
+    <entry file="file://$PROJECT_DIR$/ezlang/models/GameGrid.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/ProfileViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/Game.swift" />
     <entry file="file://$PROJECT_DIR$/ezlangTests/ezlangTests.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="405">
           <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/models/game/Task.m" />
+    <entry file="file://$PROJECT_DIR$/ezlang/models/game/Task.h" />
+    <entry file="file://$PROJECT_DIR$/ezlang/models/game/TaskRecord.swift" />
+    <entry file="file://$PROJECT_DIR$/ezlang/models/Language.swift" />
+    <entry file="file://$PROJECT_DIR$/ezlang/DatabaseHelper.swift" />
     <entry file="file://$PROJECT_DIR$/ezlang/Info.plist">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/CommonExtensions.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pods/Realm/include/realm/table_basic.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3319149">
-          <caret line="373" column="28" selection-start-line="373" selection-start-column="28" selection-end-line="373" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/User.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/util/Array2D.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/sprites/LetterNode.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/Group.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="40" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/models/Level.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/DatabaseHelper.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Results.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.021097047">
-          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+        <state relative-caret-position="261">
+          <caret line="167" column="18" selection-start-line="167" selection-start-column="11" selection-end-line="167" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/NetworkManager.swift">
+    <entry file="file://$PROJECT_DIR$/ezlang/models/IDable.swift" />
+    <entry file="file://$PROJECT_DIR$/ezlang/FeedbackController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="4" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="44" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/GameViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="appcode.project-settings://18372c33">
+      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/models/game/Game.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/GroupCell.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/HelpViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/models/sprites/LetterNode.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/Data.swift" />
+    <entry file="file://$PROJECT_DIR$/Pods/RealmSwift/RealmSwift/Realm.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/CommonExtensions.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/models/User.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/SettingCell.swift">
+    <entry file="file://$PROJECT_DIR$/ezlang/models/Level.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        <state relative-caret-position="165">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#120#137#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/Database.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#123#140#0" expanded="false" />
+            <element signature="e#1558#2158#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/DictionaryViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <marker date="1459300561000" expanded="true" signature="282:878" placeholder="{...}" />
+            <marker date="1459300561000" expanded="true" signature="538:562" placeholder="{...}" />
+            <marker date="1459300561000" expanded="true" signature="802:878" placeholder="{...}" />
+            <marker date="1459300561000" expanded="true" signature="2148:2244" placeholder="{...}" />
+            <marker date="1459300561000" expanded="true" signature="2148:2246" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ezlang/MenuViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="735">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/models/game/Task.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/models/util/TaskFactory.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/Api.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/RealmExtensions.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#91#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/SpriteKitUtils.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/models/util/Array2D.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/ButtonCell.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/SKButton.swift">
+    <entry file="file://$PROJECT_DIR$/ezlang/DictionaryCell.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/GameViewController.swift">
+    <entry file="file://$PROJECT_DIR$/Podfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/MenuButtonCell.swift">
+    <entry file="file://$PROJECT_DIR$/ezlangUITests/Info.plist">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/models/GameGrid.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/models/Group.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="e#90#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/UserProgressControl.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="40" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/GroupsViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ezlang/UiExtensions.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="93" column="31" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ezlang/GameScene.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="24" selection-start-line="91" selection-start-column="12" selection-end-line="95" selection-end-column="24" />
-          <folding>
-            <marker date="1452069649000" expanded="true" signature="3474:4675" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/SKMenuButton.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ezlang/MenuScene.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61538464">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>

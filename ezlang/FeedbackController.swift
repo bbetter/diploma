@@ -56,7 +56,6 @@ class FeedbackController : UIViewController, MFMailComposeViewControllerDelegate
     // 3
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         body.text = textView.text
-        
         if text == "\n" {
             body.resignFirstResponder()
             
@@ -66,7 +65,7 @@ class FeedbackController : UIViewController, MFMailComposeViewControllerDelegate
         return true
     }
     
-        override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(animated: Bool) {
             super.viewDidAppear(animated)
             if let gestures = self.view.gestureRecognizers as [UIGestureRecognizer]! {
                 for gesture in gestures {

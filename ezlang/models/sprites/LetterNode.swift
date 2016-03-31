@@ -10,15 +10,15 @@ class LetterNode : SKSpriteNode {
     private let DEFAULT_HEIGHT = 70
     private let DEFAULT_WIDTH = 70
     
-    private var label:SKLabelNode?
+    var label:SKLabelNode?
 
     private let mainTexture : SKTexture = SKTexture(imageNamed:"character")
 
     var character:Character = " "
+
     var row:Int = 0
     var column:Int = 0
-    
-    
+
     init(row:Int,column:Int,character:Character){
         super.init(texture:mainTexture,color:UIColor.whiteColor(),size:CGSize(width:DEFAULT_WIDTH,height: DEFAULT_HEIGHT))
         self.colorBlendFactor = 1
@@ -36,6 +36,11 @@ class LetterNode : SKSpriteNode {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    //todo: more like a business logic
+    static func mockLetter(row:Int,column:Int) -> LetterNode{
+        return LetterNode(row:row,column:column,character: String.randomLetter()[0])
     }
 }
 

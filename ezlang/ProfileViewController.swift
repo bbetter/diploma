@@ -43,14 +43,10 @@ class ProfileViewController: UIViewController{
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        
         if let gestures = self.view.gestureRecognizers as [UIGestureRecognizer]! {
             for gesture in gestures {
                 self.view.removeGestureRecognizer(gesture)
             }
-        }
-       
-        
+        }        
     }
 }

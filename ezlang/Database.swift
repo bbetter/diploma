@@ -27,28 +27,47 @@ extension Realm {
 class Database {
     static let sharedInstance = Database()
 
-    func getAllGroups()->[Group]?{
+    func getAllGroups(type:LevelType) -> [Group]? {
         let realm = try! Realm()
-        let groups = realm.objects(Group.self)
-        return groups.toArray()
+        let groups = realm.objects(Group.self).filter{item in return item.groupType == type.rawValue}
+        return  groups
     }
 
-    func getGroupById(groupId:Int)-> Group?{
+    func getGroupById(groupId: Int) -> Group? {
         let realm = try! Realm()
         return try! realm.objectForPrimaryKey(Group.self, key: groupId)
     }
 
-    func getLevel(groupId: Int, type: LevelType) -> Level? {
+    func getUser(udid:String) -> User? {
         let realm = try! Realm()
-        let group = getGroupById(groupId) as Group!
-        var level = Level()
-        return group.levels.filter {
-            item in
-            item.type == type.rawValue
-        }.random()
+        return try! realm.objectForPrimaryKey(User.self,key:udid)
     }
 
-    func getLevelsByGroupId(groupId: Int)->[Level]? {
+    func updateUserInfo(user:User){
+        let realm = try! Realm()
+
+        realm.transaction{
+            realm.add(user,update: true)
+        }
+    }
+
+    func getLevel(groupId: Int, type: LevelType, direction: TranslationDirection) -> Level? {
+        let realm = try! Realm()
+        let group = getGroupById(groupId) as Group!
+        var filteredLevels = group.levels.filter {
+            item in
+            item.type == type.rawValue &&
+                    (direction == .Forward) ? item.doneForward == false
+                    : item.doneBackward == false
+        };
+        if (filteredLevels.count > 0) {
+            return filteredLevels.random()
+        } else {
+            return nil
+        }
+    }
+
+    func getLevelsByGroupId(groupId: Int) -> [Level]? {
         let realm = try! Realm()
         let group = realm.objectForPrimaryKey(Group.self, key: groupId)
         return group?.levels
@@ -58,8 +77,37 @@ class Database {
         let realm = try! Realm()
         realm.transaction {
             for var object in objects {
+                if (object is Level) {
+                    if (realm.objectForPrimaryKey(Level.self, key: (object as! Level).id) != nil) {
+                        continue
+                    }
+                }
                 realm.add(object, update: true)
             }
+        }
+    }
+
+    func setLevelDone(id: Int, direction: TranslationDirection) {
+        let realm = try! Realm()
+        realm.transaction {
+            var level = realm.objectForPrimaryKey(Level.self, key: id)
+            if (direction == .Forward) {
+                level?.doneForward = true
+            } else {
+                level?.doneBackward = true
+            }
+            if (level == nil) {
+                return;
+            }
+            realm.add(level!, update: true)
+//            realm.create(Level.self, value: ["id": levelObj.id, "doneForward": levelObj.doneForward], update: true)
+        }
+    }
+    
+    func saveUser(user:User){
+        let realm = try! Realm()
+        realm.transaction{
+            realm.add(user, update: true)
         }
     }
 
@@ -114,6 +162,21 @@ class Database {
             }
         } catch {
             print("error serializing JSON: \(error)")
+        }
+    }
+
+    func dropProgress(groupId: Int, direction: TranslationDirection) {
+        let realm = try! Realm()
+        var group = realm.objectForPrimaryKey(Group.self, key: groupId)
+        realm.transaction {
+            group?.levels.forEach {
+                if (direction == .Forward) {
+                    $0.doneForward = false
+                } else {
+                    $0.doneBackward = false
+                }
+                realm.add($0, update: true)
+            }
         }
     }
 

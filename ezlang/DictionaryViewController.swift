@@ -43,6 +43,9 @@ class DictionaryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
+    @IBAction func backPressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion:{})
+    }
     override func viewDidLoad() {
         self.tableView.dataSource = self
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "groups_bg"))

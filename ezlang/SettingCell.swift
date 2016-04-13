@@ -41,5 +41,7 @@ class SettingCell: UITableViewCell{
         set{ segmentedControl!.setTitle(newValue, forSegmentAtIndex: 1) }
     }
     
+    
+    
    
 }

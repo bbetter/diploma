@@ -15,17 +15,15 @@ class FeedbackController : UIViewController, MFMailComposeViewControllerDelegate
     
     @IBOutlet weak var subject: UITextField!
     @IBOutlet weak var body: UITextView!
-    @IBOutlet weak var backButton: UIButton!
-
+    
+    @IBAction func backPressed(sender: UIButton) {
+         self.dismissViewControllerAnimated(true, completion: {})
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         subject.delegate = self
         body.delegate = self
-    }
-    
-    @IBAction func backPressed(sender: AnyObject) {
-         self.dismissViewControllerAnimated(true, completion: {})
     }
     
     @IBAction func sendMail(sender: AnyObject) {

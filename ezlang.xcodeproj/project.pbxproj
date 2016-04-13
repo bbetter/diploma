@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410E0B91CBEDDF500AC92E4 /* EasyLangAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410E0B81CBEDDF500AC92E4 /* EasyLangAPI.swift */; };
 		041C2CFD1C34A11400E179CF /* CommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C2CFC1C34A11400E179CF /* CommonExtensions.swift */; };
 		042DBD221C7AE76200613943 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042DBD211C7AE76200613943 /* Database.swift */; };
 		042F4ED61C2B1B9E0051FC21 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F4ED51C2B1B9E0051FC21 /* Level.swift */; };
 		0443A2BC1C752E64004CB42C /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A2BB1C752E64004CB42C /* DictionaryViewController.swift */; };
 		0446F6CD1C3D4A52009A89DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0446F6CF1C3D4A52009A89DF /* Localizable.strings */; };
 		0446F6D21C3D4BA7009A89DF /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6D11C3D4BA7009A89DF /* SettingCell.swift */; };
+		0456AE8D1CB46A6900A8FBE4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456AE8C1CB46A6900A8FBE4 /* UserDefaultsManager.swift */; };
 		046E543E1C78F68C00308F60 /* DictionaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E543D1C78F68C00308F60 /* DictionaryCell.swift */; };
 		04711A061C67518B0096E78C /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04711A051C67518B0096E78C /* GroupsViewController.swift */; };
 		04711A081C67AA670096E78C /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04711A071C67AA670096E78C /* GroupCell.swift */; };
@@ -25,6 +27,7 @@
 		04BCC0901C3D235F006F8ED5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC08F1C3D235F006F8ED5 /* MenuViewController.swift */; };
 		04C3B6B11C669D5F00DD43CE /* FeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3B6B01C669D5F00DD43CE /* FeedbackController.swift */; };
 		04DF3E1E1C1CE4A50082A4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DF3E1D1C1CE4A50082A4DC /* Assets.xcassets */; };
+		04EE75AD1CBBBAEE00D3E5F6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EE75AC1CBBBAEE00D3E5F6 /* GameKit.framework */; };
 		04F216461C45D8F3004B0EBE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F216451C45D8F3004B0EBE /* ProfileViewController.swift */; };
 		04F216481C45DA4D004B0EBE /* UiExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F216471C45DA4D004B0EBE /* UiExtensions.swift */; };
 		1A54F1C890313764BDB001E0 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F280E2E4EECE53E1E5CC /* Array2D.swift */; };
@@ -32,11 +35,13 @@
 		1A54F43AB6CCC81E965B692E /* TaskFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FE4AE57DEFFCE734C098 /* TaskFactory.swift */; };
 		1A54F59189AB6D1ADF91CCD6 /* RealmExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FBC4D539D308171E4EFD /* RealmExtensions.swift */; };
 		1A54F6DF9C5926B3D3DFC0E7 /* LetterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FE1C0D5AB6E3A1CB2963 /* LetterNode.swift */; };
+		1A54F73FCB4BDE420504C243 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F31528B18F41DB42C426 /* NetworkUtils.swift */; };
 		1A54F7522B91607BF0B4610B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F8E80D8FBB15FBA5277C /* Game.swift */; };
 		1A54F8E936A793C10E7473EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FCB22BC791130CA41A84 /* User.swift */; };
 		1A54F9049C2B82EB969B493A /* GameGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FE4CF95E15DB597C7CFD /* GameGrid.swift */; };
 		1A54F9DF93387B2F2801B029 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F3B5851251B21E86E094 /* Task.swift */; };
 		1A54FD3038339112B774E377 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FC7EBA9A3B1EB0159E97 /* Group.swift */; };
+		1A54FEA8B3807CDA77476CAA /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FAC9EE0337B3348E4CB0 /* RatingViewController.swift */; };
 		7A21FC511BFE0EF30047BE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A21FC501BFE0EF30047BE1B /* AppDelegate.swift */; };
 		7A21FC661BFE0EF30047BE1B /* ezlangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A21FC651BFE0EF30047BE1B /* ezlangTests.swift */; };
 		7A21FC711BFE0EF30047BE1B /* ezlangUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A21FC701BFE0EF30047BE1B /* ezlangUITests.swift */; };
@@ -64,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0410E0B81CBEDDF500AC92E4 /* EasyLangAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyLangAPI.swift; sourceTree = "<group>"; };
 		041C2CFC1C34A11400E179CF /* CommonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonExtensions.swift; sourceTree = "<group>"; };
 		0428BA5C1C2B1EE500BA5AD9 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
 		0428BA5E1C2B1F0800BA5AD9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm.framework"; sourceTree = "<group>"; };
@@ -73,6 +79,7 @@
 		0446F6CE1C3D4A52009A89DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0446F6D01C3D4A78009A89DF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0446F6D11C3D4BA7009A89DF /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		0456AE8C1CB46A6900A8FBE4 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		046E543D1C78F68C00308F60 /* DictionaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryCell.swift; sourceTree = "<group>"; };
 		04711A051C67518B0096E78C /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		04711A071C67AA670096E78C /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
@@ -85,13 +92,16 @@
 		04BCC08F1C3D235F006F8ED5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		04C3B6B01C669D5F00DD43CE /* FeedbackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackController.swift; sourceTree = "<group>"; };
 		04DF3E1D1C1CE4A50082A4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04EE75AC1CBBBAEE00D3E5F6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		04F216451C45D8F3004B0EBE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04F216471C45DA4D004B0EBE /* UiExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiExtensions.swift; sourceTree = "<group>"; };
 		1529403F1D818B5E60F7BA11 /* Pods-ezlangTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezlangTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A54F280E2E4EECE53E1E5CC /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		1A54F31528B18F41DB42C426 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		1A54F3B5851251B21E86E094 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		1A54F8E80D8FBB15FBA5277C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		1A54F8F88FEBB557014D57D8 /* SpriteKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitUtils.swift; sourceTree = "<group>"; };
+		1A54FAC9EE0337B3348E4CB0 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		1A54FBC4D539D308171E4EFD /* RealmExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmExtensions.swift; sourceTree = "<group>"; };
 		1A54FC7EBA9A3B1EB0159E97 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		1A54FCB22BC791130CA41A84 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -122,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0D2AF17768AB99CB0BAB4D4 /* Pods_ezlang.framework in Frameworks */,
+				04EE75AD1CBBBAEE00D3E5F6 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +173,8 @@
 				042DBD211C7AE76200613943 /* Database.swift */,
 				1A54F8F88FEBB557014D57D8 /* SpriteKitUtils.swift */,
 				1A54FBC4D539D308171E4EFD /* RealmExtensions.swift */,
+				1A54F31528B18F41DB42C426 /* NetworkUtils.swift */,
+				0456AE8C1CB46A6900A8FBE4 /* UserDefaultsManager.swift */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -184,6 +197,7 @@
 				04C3B6B01C669D5F00DD43CE /* FeedbackController.swift */,
 				04711A051C67518B0096E78C /* GroupsViewController.swift */,
 				0443A2BB1C752E64004CB42C /* DictionaryViewController.swift */,
+				1A54FAC9EE0337B3348E4CB0 /* RatingViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -282,6 +296,7 @@
 				1A54F397F3C8A6227839B8DA /* models */,
 				04BCC08E1C3D1837006F8ED5 /* views */,
 				049EC8791C5D535600F4A580 /* UserProgressControl.swift */,
+				0410E0B81CBEDDF500AC92E4 /* EasyLangAPI.swift */,
 			);
 			path = ezlang;
 			sourceTree = "<group>";
@@ -307,6 +322,7 @@
 		BDE3F88F5670857FAB193AEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04EE75AC1CBBBAEE00D3E5F6 /* GameKit.framework */,
 				0428BA5E1C2B1F0800BA5AD9 /* Realm.framework */,
 				0428BA5C1C2B1EE500BA5AD9 /* RealmSwift.framework */,
 				7CF1FEC9C80049BAC79A65F1 /* Pods_ezlang.framework */,
@@ -400,7 +416,12 @@
 				TargetAttributes = {
 					7A21FC4C1BFE0EF30047BE1B = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = QE5W5FBF3K;
+						DevelopmentTeam = UA7KX4885E;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					7A21FC601BFE0EF30047BE1B = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -562,8 +583,10 @@
 				04711A081C67AA670096E78C /* GroupCell.swift in Sources */,
 				041C2CFD1C34A11400E179CF /* CommonExtensions.swift in Sources */,
 				049706E31C333C5C00A43C56 /* Api.swift in Sources */,
+				0456AE8D1CB46A6900A8FBE4 /* UserDefaultsManager.swift in Sources */,
 				7A21FC511BFE0EF30047BE1B /* AppDelegate.swift in Sources */,
 				042F4ED61C2B1B9E0051FC21 /* Level.swift in Sources */,
+				0410E0B91CBEDDF500AC92E4 /* EasyLangAPI.swift in Sources */,
 				046E543E1C78F68C00308F60 /* DictionaryCell.swift in Sources */,
 				0443A2BC1C752E64004CB42C /* DictionaryViewController.swift in Sources */,
 				7ACC83D61C0619A500AF92C1 /* GameViewController.swift in Sources */,
@@ -588,6 +611,8 @@
 				1A54F9DF93387B2F2801B029 /* Task.swift in Sources */,
 				1A54F1DBEF00207CD9872E87 /* SpriteKitUtils.swift in Sources */,
 				1A54F59189AB6D1ADF91CCD6 /* RealmExtensions.swift in Sources */,
+				1A54F73FCB4BDE420504C243 /* NetworkUtils.swift in Sources */,
+				1A54FEA8B3807CDA77476CAA /* RatingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,8 +685,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: andriy.ihorowych@gmail.com (U34H75N4QV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: andriy.ihorowych@gmail.com (U34H75N4QV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Puhach (GWYT5WVV6M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Puhach (GWYT5WVV6M)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -707,8 +732,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: andriy.ihorowych@gmail.com (U34H75N4QV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: andriy.ihorowych@gmail.com (U34H75N4QV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Puhach (GWYT5WVV6M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Puhach (GWYT5WVV6M)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -747,7 +772,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5wheels.ezlang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "71d71121-be55-4898-aede-397ddb39249c";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ezlang/models/ezlang-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -760,7 +785,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: andriy.ihorowych@gmail.com (U34H75N4QV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -773,7 +798,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5wheels.ezlang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "71d71121-be55-4898-aede-397ddb39249c";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ezlang/models/ezlang-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};

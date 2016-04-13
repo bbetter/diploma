@@ -6,7 +6,7 @@
 import Foundation
 
 class Task {
-
+    var levelId:Int?
     var difficulty: Int?
     var group: String?
     var doneCount: Int?
@@ -41,36 +41,26 @@ class WordTask: Task {
     var wrongSourceWords: [String]? = [String]()
     var wrongTranslationWords: [String]? = [String]()
 
-    override func check(answer: String, direction: TranslationDirection) -> Bool {
-        if direction == .Forward {
-            return translationWord == answer
-        } else {
-            return sourceWord == answer
-        }
+    override func check(answer: String?, direction: TranslationDirection) -> Bool {
+//        if direction == .Forward {
+            if(translationWord == nil || answer == nil) {return false}
+            return translationWord?.lowercaseString == answer?.lowercaseString
+//        } else {
+//            if(sourceWord == nil || answer == nil) {return false}
+//            return sourceWord?.lowercaseString == answer?.lowercaseString
+//        }
     }
 
     override func getTaskHeader(direction: TranslationDirection) -> String {
-        if direction == .Forward {
-            return sourceWord!
-        } else {
-            return translationWord!
-        }
+        return (sourceWord?.uppercaseString)!
     }
 
     override func getWord(direction: TranslationDirection) -> String {
-        if direction == .Forward {
-            return translationWord!.capitalizedString[Range(start:translationWord!.startIndex.advancedBy(1),end:translationWord!.endIndex)]
-        } else {
-            return sourceWord!.capitalizedString[Range(start:sourceWord!.startIndex.advancedBy(1),end:sourceWord!.endIndex)]
-        }
+       return (translationWord?.uppercaseString)!
     }
 
     override func getAlternatives(direction: TranslationDirection) -> [String] {
-        if direction == .Forward {
-            return wrongTranslationWords!
-        } else {
-            return wrongSourceWords!
-        }
+        return wrongTranslationWords!
     }
 }
 
@@ -81,7 +71,7 @@ class GrammarTask: Task {
     var wrongAnswers: [String]?
 
     override func check(answer: String, direction: TranslationDirection) -> Bool {
-        return self.answer == answer.uppercaseString
+        return self.answer?.lowercaseString == answer.lowercaseString
     }
 
     override func getTaskHeader(direction: TranslationDirection) -> String {

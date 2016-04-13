@@ -6,33 +6,37 @@
 import Foundation
 import SpriteKit
 
-let NodeSize:CGFloat = 70.0
 
 extension CGPoint {
 
-    func toPoint(layer:SKNode)->(success:Bool,rows:Int,columns:Int){
-        let NodeSize5 = CGFloat(5.0) * NodeSize
-        if x >= 0 && x < NodeSize5 && y >= 0 && y < NodeSize5 {
-            let rows = (y / NodeSize) + 0.6
-            let cols = (x / NodeSize) 
-            return (true, Int(rows), Int(cols))
+    func toPoint(layer:SKNode,size:Int)->(success:Bool,row:Int,column:Int){
+        var nodeSize:CGFloat
+        if(size == 5){
+            nodeSize = CGFloat(70)
+        }
+        else{
+            nodeSize = CGFloat(40)
+        }
+        if x >= 0 && x < CGFloat(size)*nodeSize &&
+            y >= 0 && y < CGFloat(size)*nodeSize {
+            return (true, Int(x / nodeSize), Int(y / nodeSize))
         } else {
-            return (false, 0,0)
+            return (false, 0, 0)  // invalid location
         }
     }
 }
 
 //wtf
-func pointForColumn(column: Int, row: Int) -> CGPoint {
-    return CGPoint(
-            x: CGFloat(column) * NodeSize + NodeSize / 2.0,
-            y: CGFloat(row) * NodeSize + NodeSize / 2.0
-    )
-}
-
-extension LetterNode{
-    func isARound(letter: LetterNode) -> Bool {
-        return (letter.row - 1 == row - 1 || letter.row + 1 == row + 1) ||
-                (letter.column - 1 == column - 1 || letter.column + 1 == column + 1)
+func fromPoint(row: Int, column: Int, size:Int) -> CGPoint {
+    var nodeSize:CGFloat
+    if(size == 5){
+        nodeSize = CGFloat(70)
     }
+    else{
+        nodeSize = CGFloat(40)
+    }
+    return CGPoint(
+            x: CGFloat(column) * nodeSize + nodeSize / 2.0,
+            y: CGFloat(row) *  nodeSize + nodeSize / 2.0
+    )
 }

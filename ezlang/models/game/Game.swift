@@ -5,10 +5,10 @@
 
 import Foundation
 
-enum GridSize {
-    case Normal
-    case Big
-    case iPad
+enum GridSize: String {
+    case Normal = "normal"
+    case Big = "big"
+    case iPad = "ipad"
 
     func getSize() -> (rows:Int, columns:Int) {
         switch (self) {
@@ -18,6 +18,7 @@ enum GridSize {
         }
     }
 }
+
 enum Difficulty: Int {
     case Easy
     case Normal
@@ -34,19 +35,24 @@ enum Difficulty: Int {
         }
     }
 }
-enum LevelType:String{
+
+// from string for database
+
+enum LevelType: String {
     case LookingForWord = "WORD"
     case GrammarExercise = "GRAMMAR"
 }
-enum Mode: String{
+
+enum Mode: String {
     case Training = "Training"
     case Rating = "Rating"
     //for future
     case TimeMode
 }
-enum TranslationDirection {
-    case Forward
-    case Backward
+
+enum TranslationDirection: String {
+    case Forward = "forward"
+    case Backward = "backward"
 }
 
 public class Config {
@@ -56,9 +62,11 @@ public class Config {
     var difficulty: Difficulty = .Easy
     var gridSize: GridSize = .Normal
     var mode: Mode = .Rating
+    var type: LevelType = .LookingForWord
     var animationEnabled: Bool = true
     var soundEnabled = true
-    var languages:String = "UKR_ENG"
+    var languages: String = "UKR_ENG"
+
 }
 
 public class GameDefaults {
@@ -78,13 +86,14 @@ public class GameDefaults {
     public static let StartTipsCount = 3
     public static let Points2TipsExchangeCourse = 300
 
-    public static let EnglishLowerCaseLetters : [Character] =
-    ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-    public static let UkrainianLowerCaseLetters : [Character] =
-    ["а","б","в","г","ґ","д","е","є","ж","з","и","і","ї","й","к","л","м","н","о","п","р","с","т","у","ф","ч","ц","ч","ш","щ","ь","ю","я"]
+    public static let EnglishUpperCaseLetters: [Character] =
+    ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+    public static let UkrainianUpperCaseCaseLetters: [Character] =
+    ["А", "Б", "В", "Г", "Ґ", "Д", "Е", "Є", "Ж", "З", "И", "І", "Ї", "Й", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Ч", "Ц", "Ч", "Ш", "Щ", "Ь", "Ю", "Я"]
 
 }
 
-public class Game{
-    var config:Config = Config()
+public class Game {
+    var config: Config = Config()
+    var player: User = User()
 }

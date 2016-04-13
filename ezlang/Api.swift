@@ -1,4 +1,4 @@
-//
+        //
 //  NetworkManager.swift
 //  ezlang
 //
@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
+
 class Api{
-    let host: String = "http://localhost:3000/"
+    let host: String = "http://192.168.212.101.xip.io:3000/"
     let session: NSURLSession = NSURLSession.sharedSession()
 
     typealias Response = (data:NSData?, response:NSURLResponse?, error:NSError?)
@@ -21,10 +22,11 @@ class Api{
         request.HTTPMethod = method
 
         let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
-
+        
         session.dataTaskWithRequest(request) {
             (data, response, error) -> Void in
             if let error = error {
+                print(error.code)
               return;
             }
             if let data = data {
@@ -56,7 +58,7 @@ class Api{
             var paramString = ""
             for (key, value) in params {
                 let escapedKey = key.stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())!
-                let escapedValue = value.stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())!
+                let escapedValue = String(value).stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())!
                 paramString += "\(escapedKey)=\(escapedValue)&"
             }
 
@@ -67,20 +69,30 @@ class Api{
     }
     
     func fetchPack(handler: (success: Bool, jsonResponse: [String : AnyObject]?) -> ()) {
-        let request = clientURLRequest("pack",params:[
+        let request = clientURLRequest("api/pack",params:[
             "udid":(UIDevice.currentDevice().identifierForVendor?.UUIDString)!,
             "language":"ENG_UKR"
             ])
         post(request,handler: handler)
     }
+
+    func fetchUser(handler:(success:Bool, [String:AnyObject]?)->()){
+        let request = clientURLRequest("api/user?udid="+(UIDevice.currentDevice().identifierForVendor?.UUIDString)!,params:nil)
+        get(request,handler: handler)
+    }
     
     func getLevels(handler: (success: Bool, levels: [Level]?) -> ()) {
-        let request = clientURLRequest("levels",params: nil)
+        let request = clientURLRequest("api/levels",params: nil)
         get(request,handler: handler)
     }
     
     func getGroups(handler: (success: Bool, groups: [Group]?) -> ()) {
-        let request = clientURLRequest("groups",params:nil)
+        let request = clientURLRequest("api/groups",params:nil)
         get(request,handler: handler)
+    }
+    
+    func updateUser(udid:String,points:Int,count:Int,handler: (success: Bool,user:User?) -> ()){
+        let request = clientURLRequest("api/user",params: ["udid":udid,"points":points,"count":count])
+        post(request,handler: handler)
     }
 }

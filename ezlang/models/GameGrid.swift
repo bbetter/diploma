@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SpriteKit
 
 typealias GridPoint = (x:Int, y:Int)
 
@@ -34,7 +35,7 @@ class Grid {
         var transalts: [String] = task.getAlternatives(direction)
         NSLog("answer:\(translation)")
 
-        GridFiller.fillWord(translation, field: &charGrid);
+        GridFiller.fillWord(translation.uppercaseString, field: &charGrid);
         NSLog("**************")
         NSLog(charGrid.toString())
         NSLog("**************")
@@ -44,27 +45,27 @@ class Grid {
             break;
         case 1:
             if (transalts.count > 0) {
-                GridFiller.fillWord(transalts[0], field: &charGrid);
+                GridFiller.fillWord(transalts[0].uppercaseString, field: &charGrid);
                 NSLog(charGrid.toString())
                 NSLog("**************")
             }
             break;
         case 2:
             for i in 0 ... (transalts.count > 2 ? 3 : transalts.count) {
-                GridFiller.fillWord(transalts[i], field: &charGrid);
+                GridFiller.fillWord(transalts[i].uppercaseString, field: &charGrid);
                 NSLog(charGrid.toString())
             }
             break;
         case 3:
             for i in 0 ... (transalts.count > 2 ? 3 : transalts.count) {
-                GridFiller.fillWord(transalts[i], field: &charGrid);
+                GridFiller.fillWord(transalts[i].uppercaseString, field: &charGrid);
                 NSLog(charGrid.toString())
                 NSLog("**************")
             }
             break;
         case 4:
             for i in 0 ... transalts.count {
-                GridFiller.fillWord(transalts[i], field: &charGrid);
+                GridFiller.fillWord(transalts[i].uppercaseString , field: &charGrid);
                 NSLog(charGrid.toString())
                 NSLog("**************")
             }
@@ -84,8 +85,9 @@ class Grid {
         if let sz = size as GridSize! {
             for i in 0 ... sz.getSize().rows - 1{
                 for j in 0 ... sz.getSize().columns - 1{
-                    let node = LetterNode(row: i, column: j, character: charGrid[i, j])
-                    node.position = pointForColumn(j, row: i)
+                    var nodeSize = size?.getSize().rows == 5 ? CGFloat(70) : CGFloat(40)
+                    let node = LetterNode(row: i, column: j,size:nodeSize, character: charGrid[i, j])
+                    node.position = fromPoint(j, column: i,size: sz.getSize().rows)
                     nodes.insert(node)
                 }
             }
@@ -116,9 +118,12 @@ class GridFiller {
 
                 var way: Array<GridPoint> = Array<GridPoint>();
                 for i:Int in 0 ... wordLen - 1 {
-                    let p: GridPoint = findPlaceForLetter(word[i], way:way,field: _field);
-                    way.append(p);
-                    _field[p.x, p.y] = word[i]
+                    let p: GridPoint? = findPlaceForLetter(word[i], way:way,field: _field);
+                    if(p == nil){
+                        break;
+                    }
+                    way.append(p!);
+                    _field[p!.x, p!.y] = word[i]
                     if (i == wordLen - 1) {
                         done = true;
                     }
@@ -128,13 +133,12 @@ class GridFiller {
     }
 
 
-    static func findPlaceForLetter(letter: Character, way: [GridPoint], field: Array2D<Character>) -> GridPoint {
+    static func findPlaceForLetter(letter: Character, way: [GridPoint], field: Array2D<Character>) -> GridPoint? {
         let size = field.rows
 
         if (way.count == 0) {
             var p: GridPoint
-            var posI1: Int
-            var posI2: Int;
+            var posI1: Int, posI2: Int;
             repeat {
                 posI1 = Int(arc4random_uniform(UInt32(size)))
                 posI2 = Int(arc4random_uniform(UInt32(size)))
@@ -144,8 +148,8 @@ class GridFiller {
         } else {
             let p1: GridPoint = way[way.count - 1];
             var free = [GridPoint]();
-            for i in -1 ... 2 {
-                for j in -1 ... 2 {
+            for i in -1 ... 1 {
+                for j in -1 ... 1 {
                     if (
                     !(p1.x + i < 0 ||
                             p1.x + i > size - 1 ||
@@ -164,21 +168,22 @@ class GridFiller {
                 return free[randomIndex]
             }
         }
-        return (-1, -1);
+        return nil;
     }
 
 
     static func fillRandom(inout field: Array2D<Character>, direction: TranslationDirection, type: LevelType) {
         var letters: [Character] = (direction == TranslationDirection.Forward ?
-                GameDefaults.EnglishLowerCaseLetters :
-                GameDefaults.UkrainianLowerCaseLetters);
+                GameDefaults.EnglishUpperCaseLetters :
+                GameDefaults.UkrainianUpperCaseCaseLetters);
 
-        if (type == LevelType.GrammarExercise) {
-            letters = GameDefaults.EnglishLowerCaseLetters
+        if (type == .GrammarExercise) {
+            letters = GameDefaults.EnglishUpperCaseLetters
         };
 
-        var count = letters.count;
-        var size = field.columns;
+
+        let count = letters.count;
+        let size = field.columns;
 
         for i: Int in 0 ... size - 1{
             for j: Int in 0 ... size - 1 {

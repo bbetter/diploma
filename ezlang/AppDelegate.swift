@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import Siesta
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var database = Database.sharedInstance
     lazy var api = Api.sharedInstance
     lazy var game = Game()
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
@@ -36,24 +36,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
         })
         Realm.Configuration.defaultConfiguration = config
-       
+
+
         api.fetchPack({ isSuccessful,resultObject in
             var dict = resultObject as Dictionary<String, AnyObject>!
 
-            let groupItemsArray = dict["mGroupInsert"] as! [[String : AnyObject]]
-            let levelItemsArray = dict["mLevelInsert"] as! [[String : AnyObject]]
-            var groups = [Group]()
-            var levels = [Level]()
-            groupItemsArray.forEach({
-                item in
-                 groups.append(Group.fromJson(item))
-            })
-            levelItemsArray.forEach({
-                item in
-                 levels.append(Level.fromJson(item))
-            })
-            self.database.saveToDatabase(groups)
-            self.database.saveToDatabase(levels)
+            if(dict != nil) {
+                let groupItemsArray = dict["mGroupInsert"] as! [[String:AnyObject]]
+                let levelItemsArray = dict["mLevelInsert"] as! [[String:AnyObject]]
+                var groups = [Group]()
+                var levels = [Level]()
+                groupItemsArray.forEach({
+                    item in
+                    groups.append(Group.fromJson(item))
+                })
+                self.database.saveToDatabase(groups)
+                levelItemsArray.forEach({
+                    item in
+                    levels.append(Level.fromJson(item))
+                })
+                self.database.saveToDatabase(levels)
+            }
         })
         return true
     }
@@ -64,11 +67,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
+        UserDefaultsManager.sharedInstance.saveConfig(game.config)
+    
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
+        if let config = UserDefaultsManager.sharedInstance.getConfig(){
+            game.config = config
+        }
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
 
@@ -79,5 +87,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
 }
 

@@ -32,7 +32,7 @@ class Group: Object {
         }
         if let key = json["mKey"] as? String {
             var group = key.split("_")[1]
-            groupObj.imageUrl = "groups/" + group + ".png"
+            groupObj.imageUrl = group + ".png"
         }
         if let groupType = json["mGroupType"] as? String {
             groupObj.groupType = groupType
@@ -56,5 +56,17 @@ class Group: Object {
             groupObj.price = price
         }
         return groupObj
+    }
+
+    var doneForward : Int {
+        get{
+            return levels.filter{$0.doneForward == true}.count
+        }
+    }
+
+    var doneBackward : Int {
+        //get{
+            return levels.filter{$0.doneBackward == true}.count
+        //}
     }
 }

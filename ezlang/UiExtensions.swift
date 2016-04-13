@@ -46,6 +46,15 @@ extension UIViewController{
         openController("Main", controllerName: controllerName,transitionStyle: .PartialCurl)
     }
     
+    func setBackgroundImage(imageFileName:String){
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named:imageFileName)!.drawInRect(self.view.bounds);
+        var image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+        self.view.backgroundColor = UIColor(patternImage:image);
+    }
+    
 }
 
 extension UIImageView {

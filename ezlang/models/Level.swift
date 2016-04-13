@@ -59,12 +59,13 @@ class Level: Object {
     }
 
     func getTask(levelType:LevelType,direction:TranslationDirection) -> Task {
+        
         let (word, alts, translation, translationAlts) = parseLevel()
         var task:Task
         if(levelType == .LookingForWord){
             let wordTask = WordTask()
-            wordTask.sourceWord = (direction == .Forward) ? word : translation
-            wordTask.translationWord =  (direction == .Forward) ? translation : word
+            wordTask.sourceWord = (direction == .Forward) ? word.uppercaseString : translation.uppercaseString
+            wordTask.translationWord =  (direction == .Forward) ? translation.uppercaseString : word.uppercaseString
             wordTask.wrongSourceWords = (direction == .Forward) ? alts : translationAlts
             wordTask.wrongTranslationWords = (direction == .Forward) ? translationAlts : alts
             task = wordTask
@@ -76,7 +77,7 @@ class Level: Object {
             grammarTask.wrongAnswers = translationAlts
             task = grammarTask
         }
-
+        task.levelId = id
         task.difficulty = self.difficulty
         task.group = (direction == .Forward) ? group?.headerSource : group?.headerTranslation
         return task
@@ -90,11 +91,27 @@ class Level: Object {
         let sourceParts:[String] = source.split(" || ")
         let resParts:[String] = res.split(" || ")
 
-        let s = sourceParts[0]
-        let r = resParts[0]
+        let s = sourceParts[0].stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        let r = resParts[0].stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
 
-        let sourceAlts:[String] = sourceParts[1].split(";")
-        let resAlts:[String] = resParts[1].split(";")
+        var sourceAlts: [String] = [String]()
+        var resAlts:[String] = [String]()
+
+        if(sourceParts.count > 1){
+            sourceAlts = sourceParts[1].split(";")
+        }
+        if(resParts.count > 1) {
+            resAlts = resParts[1].split(";")
+        }
+
+
+        for(index,_) in sourceAlts.enumerate(){
+            sourceAlts[index] = sourceAlts[index].stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        }
+
+        for(index,_) in resAlts.enumerate(){
+            resAlts[index] = resAlts[index].stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        }
 
         return (s, sourceAlts, r, resAlts)
     }

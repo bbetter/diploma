@@ -11,6 +11,7 @@ import UIKit
 import RealmSwift
 
 class User: Object {
+    var id: Int?
     var name: String?
     var surname: String?
     var uuid: String? = (UIDevice.currentDevice().identifierForVendor?.UUIDString)!;

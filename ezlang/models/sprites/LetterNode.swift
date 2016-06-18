@@ -27,14 +27,15 @@ class LetterNode : SKSpriteNode {
         self.character = character;
 
         label = SKLabelNode()
-        label!.fontColor = UIColor.blackColor()
+        label?.fontColor = UIColor.blackColor()
+        label?.position = CGPoint(x:0.5,y:0.5)
         if(size == CGFloat(40)){
-            label!.fontSize = CGFloat(20)
+            label?.fontSize = CGFloat(20)
         }
         else{
-            label!.fontSize = CGFloat(30)
+            label?.fontSize = CGFloat(30)
         }
-        label!.text = String(character)
+        label?.text = String(character)
 
         self.addChild(label!)
     }

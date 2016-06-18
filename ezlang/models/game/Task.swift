@@ -42,13 +42,8 @@ class WordTask: Task {
     var wrongTranslationWords: [String]? = [String]()
 
     override func check(answer: String?, direction: TranslationDirection) -> Bool {
-//        if direction == .Forward {
             if(translationWord == nil || answer == nil) {return false}
             return translationWord?.lowercaseString == answer?.lowercaseString
-//        } else {
-//            if(sourceWord == nil || answer == nil) {return false}
-//            return sourceWord?.lowercaseString == answer?.lowercaseString
-//        }
     }
 
     override func getTaskHeader(direction: TranslationDirection) -> String {

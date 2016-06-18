@@ -84,13 +84,25 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-ezlang/Alamofire.framework"
+  install_framework "Pods-ezlang/ObjectMapper.framework"
+  install_framework "Pods-ezlang/Realm.framework"
+  install_framework "Pods-ezlang/RealmSwift.framework"
+  install_framework "Pods-ezlang/Siesta.framework"
+fi
+if [[ "$CONFIGURATION" == "Server" ]]; then
+  install_framework "Pods-ezlang/ObjectMapper.framework"
+  install_framework "Pods-ezlang/Realm.framework"
+  install_framework "Pods-ezlang/RealmSwift.framework"
+  install_framework "Pods-ezlang/Siesta.framework"
+fi
+if [[ "$CONFIGURATION" == "Local" ]]; then
+  install_framework "Pods-ezlang/ObjectMapper.framework"
   install_framework "Pods-ezlang/Realm.framework"
   install_framework "Pods-ezlang/RealmSwift.framework"
   install_framework "Pods-ezlang/Siesta.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-ezlang/Alamofire.framework"
+  install_framework "Pods-ezlang/ObjectMapper.framework"
   install_framework "Pods-ezlang/Realm.framework"
   install_framework "Pods-ezlang/RealmSwift.framework"
   install_framework "Pods-ezlang/Siesta.framework"

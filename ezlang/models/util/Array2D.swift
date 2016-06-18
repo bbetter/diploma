@@ -40,7 +40,7 @@ struct Array2D<T> {
         }
     }
     
-    func countByCondition(condition: (T) -> Bool) -> Int {
+    func count(condition: (T) -> Bool) -> Int {
         return array.flatMap({$0}).filter{item in condition(item)}.count
     }
     

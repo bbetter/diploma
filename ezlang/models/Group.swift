@@ -5,68 +5,82 @@
 
 import Foundation
 import RealmSwift
+import Realm
+import ObjectMapper
 
-class Group: Object {
+class Group: Object , Mappable{
+    
     dynamic var id = 0
-    var levels: [Level] {
-        return linkingObjects(Level.self, forProperty: "group")
-    }
-    //  dynamic var key = ""
-//    dynamic var version = 0
+    dynamic var key = ""
+    let levels = LinkingObjects(fromType: Level.self,property: "group")
+    
     dynamic var groupType = ""
-    //dynamic var isOnClient = false
+    
     dynamic var headerSource = ""
     dynamic var headerTranslation = ""
     dynamic var imageUrl = ""
     dynamic var price = 0
-
+    
+    var levelCount:Int?
+    
+    required convenience init?(_ map: Map) {
+        self.init()
+    }
+    
     override static func primaryKey() -> String? {
         return "id"
     }
-
-    internal static func fromJson(json: [String:AnyObject]) -> Group {
-        let groupObj = Group()
-
-        if let id = json["mId"] as? Int {
-            groupObj.id = id
+    
+    static func mappedArrayOfGroups(array:[AnyObject]) -> [Group]?{
+        return Mapper<Group>().mapArray(array)
+    }
+    
+    static func mappedGroup(dict: Dictionary<String,AnyObject>) -> Group?{
+        return Mapper<Group>().map(dict)
+    }
+    
+    func mapping(map: Map) {
+        id <- map["id"]
+        key <- map["key"]
+        imageUrl <- map["imageUrl"]
+        groupType <- map["groupType"]
+        headerSource <- map["headerSource"]
+        headerTranslation <- map["headerTranslation"]
+        price <- map["price"]
+        levelCount <- map["levelCount"]
+    }
+    
+    func getImageUrl() -> String{
+        if(imageUrl == "local"){
+            var arr = key.split("_")
+            if(arr[0] == "") { return ""; }
+            return (key+".png").stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         }
-        if let key = json["mKey"] as? String {
-            var group = key.split("_")[1]
-            groupObj.imageUrl = group + ".png"
+        else{
+            return imageUrl
         }
-        if let groupType = json["mGroupType"] as? String {
-            groupObj.groupType = groupType
-        }
-//        if let isOnClient = json["mOnClient"] as? Bool {
-//            groupObj.isOnClient = isOnClient
-//        }
-        if let header1 = json["mHeaderSource"] as? String {
-            groupObj.headerSource = header1
-        }
-        if let header2 = json["mHeaderDestination"] as? String {
-            groupObj.headerTranslation = header2
-        }
-//        if let groupLanguages = json["mGroupLanguages"] as? String {
-//            groupObj.groupLanguages = groupLanguages
-//        }
-        if let imageUrl = json["mImageUrl"] as? String {
-            groupObj.imageUrl = imageUrl
-        }
-        if let price = json["mPrice"] as? Int {
-            groupObj.price = price
-        }
-        return groupObj
     }
 
+    override var debugDescription :String {
+        return "{ id=\(id)\n" +
+                "key=\(key)\n" +
+                "imageUrl=\(imageUrl)\n" +
+                "groupType=\(groupType)\n" +
+                "headerSource=\(headerSource)\n" +
+                "headerTranslation=\(headerTranslation)\n" +
+                "price=\(price)\n" +
+                "levelCount=\(levelCount)"
+    }
+    
     var doneForward : Int {
-        get{
-            return levels.filter{$0.doneForward == true}.count
-        }
+        return try! levels.filter{$0.doneForward == true}.count
+    }
+    
+    var doneBackward : Int {
+        return try! levels.filter{$0.doneBackward == true}.count
     }
 
-    var doneBackward : Int {
-        //get{
-            return levels.filter{$0.doneBackward == true}.count
-        //}
+    func levelsArray()->[Level]?{
+        return levels.reverse()
     }
 }

@@ -40,8 +40,13 @@ class SettingCell: UITableViewCell{
         get{ return segmentedControl!.titleForSegmentAtIndex(1)! }
         set{ segmentedControl!.setTitle(newValue, forSegmentAtIndex: 1) }
     }
-    
-    
-    
+
+    func titleForIndex(index: Int,title:String) -> Void {
+        segmentedControl!.setTitle(title,forSegmentAtIndex: index)
+    }
+
+    func titleForIndex(index: Int) -> String? {
+        return segmentedControl!.titleForSegmentAtIndex(index)
+    }
    
 }

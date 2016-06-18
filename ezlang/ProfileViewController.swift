@@ -18,10 +18,18 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var rightCountLabel: UILabel!
     @IBOutlet weak var udidLabel: UILabel!
 
+    @IBOutlet weak var dropProgressButton: UIButton!
     @IBAction func backButtonClicked(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: {})
     }
 
+    @IBOutlet weak var dropProgressView: UIButton!
+    
+    @IBAction func dropProgress() {
+        Database.sharedInstance.clearProgress()
+        EasyLangAPI.sharedInstance.me.request(.POST)
+    }
+    
     var user: User?
 
     override func viewDidLoad() {
@@ -30,36 +38,45 @@ class ProfileViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
-        let app = UIApplication.sharedApplication().delegate as! AppDelegate
-        var allgroupslevels = app.database
-            .getAllGroups(app.game.config.type)
-            .flatMap{
-                $0.flatMap{$0.levels
-                }
-             }
-        var frwd = allgroupslevels?.filter{$0.doneForward == true}.count
-        var dnba = allgroupslevels?.filter{$0.doneBackward == true}.count
-        var pointsForward = allgroupslevels?.filter{$0.doneForward == true}.map{$0.difficulty * 10}.reduce(0, combine: +)
-        var pointsBackward = allgroupslevels?.filter{$0.doneBackward == true}.map{$0.difficulty * 10}.reduce(0, combine: +)
-        
-        var points = pointsForward! + pointsBackward!
-        var solvedCount = frwd!+dnba!
-        app.api.updateUser(app.game.player.uuid!, points: points, count: solvedCount, handler: {
-            success,user in
-          
-        })
+        let allgroupslevels = try! Database.sharedInstance
+        .getAllGroups(Game.sharedInstance.config.type)
+        .flatMap {
+            $0.flatMap {
+                $0.levels
+            }
+        }
+        let frwd = allgroupslevels?.filter {
+            $0.doneForward == true
+        }.count
+        let dnba = allgroupslevels?.filter {
+            $0.doneBackward == true
+        }.count
+        let pointsForward = try! allgroupslevels?.filter {
+            $0.doneForward == true
+        }.map {
+            $0.difficulty * 10
+        }.reduce(0, combine: +)
+        let pointsBackward = try! allgroupslevels?.filter {
+            $0.doneBackward == true
+        }.map {
+            $0.difficulty * 10
+        }.reduce(0, combine: +)
+
+        let points = pointsForward! + pointsBackward!
+        let solvedCount = frwd! + dnba!
+        EasyLangAPI.sharedInstance.me.request(.POST, json: ["udid": Game.sharedInstance.player.uuid!, "points": points, "count": solvedCount]).onSuccess({
+            _ in return;
+        });
+
         self.rightCountLabel.text = "Пройдені завдання: " + String(solvedCount);
         self.pointsLabel.text = "Бали: " + String(points)
-        var levels = Int(points/100)
-        self.progressCircle.progress = CGFloat(points - levels*100)
-        
-        self.progressCircle.level = String(levels+1)
-        self.progressCircle.toNextLevel = CGFloat(100 - (points - levels*100))
-       
+        let levels = Int(points / 100)
+        self.progressCircle.progress = CGFloat(points - levels * 100)
 
-        
+        self.progressCircle.level = String(levels + 1)
+        self.progressCircle.toNextLevel = CGFloat(100 - (points - levels * 100))
     }
-    
+
 //        app.api.fetchUser {
 //            success, json in
 //            if (success == true && json != nil) {
@@ -81,6 +98,6 @@ class ProfileViewController: UIViewController {
                 self.view.removeGestureRecognizer(gesture)
             }
         }
-           }
+    }
 
 }

@@ -27,7 +27,7 @@ extension DictionaryViewController:
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("DictionaryCell", forIndexPath: indexPath) as! DictionaryCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("dictionary_cell", forIndexPath: indexPath) as! DictionaryCell
         let (word, _, translation, _) = levels![indexPath.row].parseLevel()
         cell.wordLabel?.text = translation
         cell.translationLabel?.text = word
@@ -46,21 +46,11 @@ class DictionaryViewController: UIViewController {
     @IBAction func backPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion:{})
     }
+
     override func viewDidLoad() {
         self.tableView.dataSource = self
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "groups_bg"))
-        UINavigationBar.appearance().hidden = false
-        UINavigationBar.appearance().backgroundColor = UIColor.clearColor()
-        
-        let app = UIApplication.sharedApplication().delegate as! AppDelegate
-        // fix margin from top
-        let inset: UIEdgeInsets = UIEdgeInsetsMake(20, 0, 0, 0)
-        self.tableView.contentInset = inset;
-        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "back_Button")
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "back_button")
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
-        
-        levels = app.database.getLevelsByGroupId(groupId!)
+        levels = Database.sharedInstance.getLevelsByGroupId(groupId!)
         tableView.reloadData()
     }
 }

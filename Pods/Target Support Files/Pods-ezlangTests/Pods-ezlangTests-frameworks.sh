@@ -87,6 +87,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-ezlangTests/Realm.framework"
   install_framework "Pods-ezlangTests/RealmSwift.framework"
 fi
+if [[ "$CONFIGURATION" == "Server" ]]; then
+  install_framework "Pods-ezlangTests/Realm.framework"
+  install_framework "Pods-ezlangTests/RealmSwift.framework"
+fi
+if [[ "$CONFIGURATION" == "Local" ]]; then
+  install_framework "Pods-ezlangTests/Realm.framework"
+  install_framework "Pods-ezlangTests/RealmSwift.framework"
+fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ezlangTests/Realm.framework"
   install_framework "Pods-ezlangTests/RealmSwift.framework"

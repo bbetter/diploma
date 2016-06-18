@@ -12,92 +12,121 @@ import SpriteKit
 import RealmSwift
 
 class GameViewController: UIViewController {
+    
     var scene: GameScene?
-    var taskFactory:TaskFactory?
-    var groupId:Int?
+    var taskFactory: TaskFactory?
+    var groupId: Int?
 
     let app = UIApplication.sharedApplication().delegate as! AppDelegate
-    
-    @IBOutlet weak var backButton: UIButton?
-    @IBOutlet weak var pointsLabel: UILabel?
 
-    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
 
-    @IBAction func skipItem(sender: AnyObject) {
-            scene?.shuffle()
+    func countPoints()->(Int,Int){
+        let allgroupslevels =
+            Database.sharedInstance
+                .getAllGroups(Game.sharedInstance.config.type)
+                .flatMap {
+                    $0.flatMap {
+                        $0.levels
+                    }
+        }
+        let frwd = allgroupslevels?.filter {
+                $0.doneForward == true
+            }.count
+        let dnba = allgroupslevels?.filter {
+                $0.doneBackward == true
+            }.count
+        let pointsForward = try! allgroupslevels?.filter {
+                $0.doneForward == true
+            }.map {
+                $0.difficulty * 10
+            }.reduce(0, combine: +)
+        let pointsBackward = try! allgroupslevels?.filter {
+                $0.doneBackward == true
+            }.map {
+                $0.difficulty * 10
+            }.reduce(0, combine: +)
+        
+        let points = pointsForward! + pointsBackward!
+        let solvedCount = frwd! + dnba!
+        
+        return (points,solvedCount)
     }
-    
+
     @IBAction func backPressed(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: {
-            self.app.database.saveUser(self.app.game.player)
-            
-            var allgroupslevels = self.app.database
-                .getAllGroups(self.app.game.config.type)
-                .flatMap{
-                    $0.flatMap{$0.levels
-                    }
-            }
-            var frwd = allgroupslevels?.filter{$0.doneForward == true}.count
-            var dnba = allgroupslevels?.filter{$0.doneBackward == true}.count
-            var pointsForward = allgroupslevels?.filter{$0.doneForward == true}.map{$0.difficulty * 10}.reduce(0, combine: +)
-            var pointsBackward = allgroupslevels?.filter{$0.doneBackward == true}.map{$0.difficulty * 10}.reduce(0, combine: +)
-            
-            var points = pointsForward! + pointsBackward!
-            var solvedCount = frwd!+dnba!
-        
-            if(self.app.game.player.uuid == nil) { return };
-            self.app.api.updateUser(self.app.game.player.uuid!, points: points, count: solvedCount, handler: {_,_ in
+            if(Game.sharedInstance.config.mode == .Rating) {
                 
-            })
-        })
-    }
-    
-    override func shouldAutorotate() -> Bool {
-        return (UIDevice.currentDevice().userInterfaceIdiom == .Pad)
+                Database.sharedInstance.saveUser(Game.sharedInstance.player)
+                
+                let (points,solvedCount) = self.countPoints()
+                
+                if (Game.sharedInstance.player.uuid == nil) {
+                    return
+                };
+                
+                EasyLangAPI.sharedInstance.me
+                    .request(.POST, json: ["udid": Game.sharedInstance.player.uuid!, "points": points, "count": solvedCount])
+                    .onSuccess({
+                        e in print(e)
+                    });
+                }
+        });
     }
 
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.AllButUpsideDown
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Configure the view.
+    override func viewWillLayoutSubviews() {
         let skView = view as! SKView
+    
         skView.multipleTouchEnabled = false
         skView.showsFPS = true
         skView.showsNodeCount = true
-
+        
         // Create and configure the scene.
-        scene = GameScene(size:skView.bounds.size,groupId:groupId!,controller: self)
-        scene!.groupId = groupId!
-        scene!.scaleMode = .AspectFill
-
-        scene!.groupFinished = {
-            self.dismissViewControllerAnimated(true,completion: {
-                self.app.database.saveUser(self.app.game.player)
+        scene = GameScene(size: skView.bounds.size, groupId: groupId!, controller: self)
+        scene?.groupId = groupId!
+        scene?.scaleMode = .Fill
+        
+        scene?.groupFinished = {
+            self.dismissViewControllerAnimated(true, completion: {
+                if(Game.sharedInstance.config.mode == .Rating){
+                    Database.sharedInstance.saveUser(Game.sharedInstance.player)
+                }
             })
         }
         
-    
-        var groupPoints = app.database.getLevelsByGroupId(groupId!)?.filter{
-            if(app.game.config.direction == .Forward){
+        
+        let groupPoints = try! Database.sharedInstance.getLevelsByGroupId(groupId!)?.filter {
+            if (Game.sharedInstance.config.direction == .Forward) {
                 return $0.doneForward == true
-            }
-            else{
+            } else {
                 return $0.doneBackward == true
             }
-        }
-            .map{$0.difficulty * 10}
+            }
+            .map {
+                $0.difficulty * 10
+            }
             .reduce(0, combine: +)
-        updatePoints(groupPoints!)
+//        if(Game.sharedInstance.config.mode == .Rating){
+//            updatePoints(groupPoints!)
+//        }
+//        else{
+//            pointsLabel?.animateVisibility(false)
+//        }
         skView.presentScene(scene)
     }
+
+//    func updatePoints(points: Int) {
+//        pointsLabel?.text = String(points)
+//    }
     
-    func updatePoints(points:Int){
-        pointsLabel?.text = String(points)
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if let gestures = self.view.gestureRecognizers as [UIGestureRecognizer]! {
+            for gesture in gestures {
+                self.view.removeGestureRecognizer(gesture)
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SpriteKit
 
 /**
 *
@@ -49,7 +50,7 @@ extension UIViewController{
     func setBackgroundImage(imageFileName:String){
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named:imageFileName)!.drawInRect(self.view.bounds);
-        var image = UIGraphicsGetImageFromCurrentImageContext();
+        let image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
         self.view.backgroundColor = UIColor(patternImage:image);
@@ -58,7 +59,26 @@ extension UIViewController{
 }
 
 extension UIImageView {
-    func downloadImageFromUrl(link link:String, contentMode mode: UIViewContentMode) {
+
+    func loadImage(path path:String,contentMode mode:UIViewContentMode) {
+        guard loadimagrFromFile(path: path, contentMode:mode)
+        else {
+            downloadImageFromUrl(link: path, contentMode:mode)
+            return;
+        }
+    }
+
+    private func loadimagrFromFile(path path:String, contentMode mode:UIViewContentMode) -> Bool{
+        guard
+            let loadedImage = UIImage(named:path)
+        else {return false}
+
+        contentMode = mode
+        self.image = loadedImage
+        return true
+    }
+
+    private func downloadImageFromUrl(link link:String, contentMode mode: UIViewContentMode){
         guard
             let url = NSURL(string: link)
             else {return}
@@ -77,6 +97,7 @@ extension UIImageView {
     }
 }
 
+
 extension UITableView{
     func reloadWithFade(){
         self.alpha = 0
@@ -87,9 +108,26 @@ extension UITableView{
     }
 }
 
+extension UIView {
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+}
+
 extension UISegmentedControl{
     func removeDivider(){
         self.setDividerImage(imageWithColor(UIColor.clearColor()), forLeftSegmentState: .Normal, rightSegmentState: .Normal, barMetrics: .Default)
+    }
+    
+    func setFont(newFontName: String?, newFontSize:CGFloat?){
+        let attributedSegmentFont = NSDictionary(object: UIFont(name: newFontName!, size: newFontSize!)!, forKey:NSFontAttributeName)
+        self.setTitleTextAttributes(attributedSegmentFont as [NSObject : AnyObject], forState: .Normal)
     }
     
     func setTextColorForState(color:UIColor,state:UIControlState)->Void{
@@ -107,5 +145,33 @@ extension UISegmentedControl{
         let image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         return image
+    }
+}
+
+extension SKScene {
+    var snapshot : UIImage {
+    let snapshotView = view!.snapshotViewAfterScreenUpdates(true)
+    let bounds = UIScreen.mainScreen().bounds
+    
+    UIGraphicsBeginImageContextWithOptions(bounds.size, false, 0)
+    
+    snapshotView.drawViewHierarchyInRect(bounds, afterScreenUpdates: true)
+    
+    let screenshotImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()
+    
+    UIGraphicsEndImageContext()
+    
+    return screenshotImage;
+    }
+}
+
+extension UIView{
+
+    var snapshot: UIImage {
+        UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.mainScreen().scale)
+        drawViewHierarchyInRect(bounds, afterScreenUpdates: true)
+        let result = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return result
     }
 }

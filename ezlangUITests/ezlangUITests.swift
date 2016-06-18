@@ -9,7 +9,7 @@
 import XCTest
 
 class ezlangUITests: XCTestCase {
-        
+    
     override func setUp() {
         super.setUp()
         
@@ -17,9 +17,10 @@ class ezlangUITests: XCTestCase {
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
+        
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
+        
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
@@ -28,9 +29,43 @@ class ezlangUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSettingsGridSize() {
+        
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
+        tablesQuery.buttons["Settings"].tap()
+        tablesQuery.buttons["Big"].tap()
+        
+        
+        XCTAssert(tablesQuery.buttons["Big"].selected == true)
+        app.buttons["arr24"].tap()
     }
+    
+    func testSettingsSound() {
+        
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
+        tablesQuery.buttons["Settings"].tap()
+        tablesQuery.buttons["Off"].tap()
+        
+        
+        XCTAssert(tablesQuery.buttons["Off"].selected == true)
+        
+        app.buttons["arr24"].tap()
+    }
+    
+    func testSettingsTranslationDirection() {
+        
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
+        tablesQuery.buttons["Settings"].tap()
+        tablesQuery.buttons["UKR->ENG"].tap()
+        
+        XCTAssert(tablesQuery.buttons["UKR->ENG"].selected == true)
+        app.buttons["arr24"].tap()
+
+        
+    }
+    
     
 }

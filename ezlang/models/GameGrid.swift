@@ -101,7 +101,7 @@ class GridFiller {
 
     static func fillWord(word: String, inout field: Array2D<Character>) {
         let wordLen = word.characters.count;
-        if (field.countByCondition {$0 == Grid.EmptyCell} > wordLen && word.characters.count > 0) {
+        if (field.count {$0 == Grid.EmptyCell} > wordLen && word.characters.count > 0) {
             var done = false;
             let size = field.rows;
             var _field: Array2D<Character> = Array2D<Character>(rows: size, columns: size,item:Grid.EmptyCell)

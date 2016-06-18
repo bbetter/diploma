@@ -63,10 +63,8 @@ public class Config {
     var gridSize: GridSize = .Normal
     var mode: Mode = .Rating
     var type: LevelType = .LookingForWord
-    var animationEnabled: Bool = true
     var soundEnabled = true
     var languages: String = "UKR_ENG"
-
 }
 
 public class GameDefaults {
@@ -94,6 +92,7 @@ public class GameDefaults {
 }
 
 public class Game {
+    static var sharedInstance: Game = Game()
     var config: Config = Config()
     var player: User = User()
 }

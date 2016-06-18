@@ -40,18 +40,12 @@ class FeedbackController : UIViewController, MFMailComposeViewControllerDelegate
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    // UITextFieldDelegate
-    
-    // 2
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
         return true
     }
     
-    // UITextViewDelegate
-    
-    // 3
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         body.text = textView.text
         if text == "\n" {

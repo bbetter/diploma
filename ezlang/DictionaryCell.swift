@@ -18,18 +18,9 @@ class DictionaryCell :UITableViewCell{
     @IBOutlet weak var playSoundButton: UIButton!
     
     @IBAction func buttonPressed(sender: AnyObject) {
-        let speechsynt: AVSpeechSynthesizer = AVSpeechSynthesizer() //initialize the synthesizer
-        
-        //workaround for iOS8 Bug
-        
-        let beforeSpeechString : String = " "
-        let beforeSpeech:AVSpeechUtterance = AVSpeechUtterance(string: beforeSpeechString)
-        speechsynt.speakUtterance(beforeSpeech)
-        //realstring to speak
-        let speechString : String = (wordLabel?.text)!
-        let nextSpeech:AVSpeechUtterance = AVSpeechUtterance(string: speechString)
-        nextSpeech.rate = AVSpeechUtteranceMinimumSpeechRate; // some Configs :-)
-        speechsynt.speakUtterance(nextSpeech) //let me Speak
+        if(Game.sharedInstance.config.soundEnabled){
+            AVSpeechSynthesizer.wordToSound(wordLabel!.text)
+        }
     }
     
 }

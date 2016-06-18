@@ -1,0 +1,776 @@
+{
+  "groupsToInsert": [
+    {
+      "id": 1,
+      "key": "W_GENERAL",
+      "groupType": "WORD",
+      "onClient": 0,
+      "headerSource": "Загальні",
+      "headerTranslation": "General",
+      "groupLanguages": "ENG_UKR",
+      "imageUrl": "local",
+      "price": 0
+    },
+    {
+      "id": 2,
+      "key": "W_CARS",
+      "groupType": "WORD",
+      "onClient": 0,
+      "headerSource": "Автомобілі",
+      "headerTranslation": "Cars",
+      "groupLanguages": "ENG_UKR",
+      "imageUrl": "local",
+      "price": 0
+    },
+    {
+      "id": 3,
+      "key": "W_ANIMALS",
+      "groupType": "WORD",
+      "onClient": 0,
+      "headerSource": "Тварини",
+      "headerTranslation": "Animals",
+      "groupLanguages": "ENG_UKR",
+      "imageUrl": "local",
+      "price": 0
+    },
+    {
+      "id": 4,
+      "key": "W_EMOTIONS",
+      "groupType": "WORD",
+      "onClient": 0,
+      "headerSource": "Емоції",
+      "headerTranslation": "Emotions",
+      "groupLanguages": "ENG_UKR",
+      "imageUrl": "local",
+      "price": 100
+    },
+    {
+      "id": 5,
+      "key": "W_FOOD ",
+      "groupType": "WORD",
+      "onClient": 0,
+      "headerSource": "їжа",
+      "headerTranslation": "Food ",
+      "groupLanguages": "ENG_UKR",
+      "imageUrl": "local",
+      "price": 100
+    },
+    {
+      "id": 6,
+      "key": "W_NATURE ",
+      "groupType": "WORD",
+      "onClient": 0,
+      "headerSource": "Природа",
+      "headerTranslation": "Nature ",
+      "groupLanguages": "ENG_UKR",
+      "imageUrl": "local",
+      "price": 100
+    },
+    {
+      "id": 7,
+      "key": "G_PRESENT SIMPLE ",
+      "groupType": "GRAMMAR",
+      "onClient": 0,
+      "headerSource": "Present Simple ",
+      "headerTranslation": "Present Simple ",
+      "groupLanguages": "ENG_UKR",
+      "imageUrl": "local",
+      "price": 100
+    }
+  ],
+  "levelsToInsert": [
+    {
+      "id": 1,
+      "groupId": 7,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "GRAMMAR",
+      "level": "is || are;have=>Easy Lang (to be) the best application in the world!  || was;were"
+    },
+    {
+      "id": 2,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "слово || буква;фраза=>word || phrase;letter"
+    },
+    {
+      "id": 3,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "гра || розвага;веселощі=>game || fun;play"
+    },
+    {
+      "id": 4,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "сонце || зірка;літо=>sun || star;son"
+    },
+    {
+      "id": 5,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "сокира || молот;пила=>axe || hammer;sword"
+    },
+    {
+      "id": 6,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "їжа || страва;їсти=>food || dish;eat"
+    },
+    {
+      "id": 7,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "дерево || дошка;кущ=>tree || wood;plant"
+    },
+    {
+      "id": 8,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "river || sea;stream=>річка || струмок;море"
+    },
+    {
+      "id": 9,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "час || година;день=>time || hour;now"
+    },
+    {
+      "id": 10,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "мистецтво || картина;творчість=>art || painting;graphic"
+    },
+    {
+      "id": 11,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "автомобіль || авто;карт=>car || machine;auto"
+    },
+    {
+      "id": 12,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "весна || зима;літо=>spring || summer;april"
+    },
+    {
+      "id": 13,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "компютер || калькулятор=>computer || calculator"
+    },
+    {
+      "id": 14,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "друг || знайомий;родич=>friend || brother;mate"
+    },
+    {
+      "id": 15,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "будинок || будка=>house || doom;hseou"
+    },
+    {
+      "id": 16,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "тварина || звір;істота=>animal || beast;creature"
+    },
+    {
+      "id": 17,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "фрукт || овоч;яблуко=>fruit || apple;froot"
+    },
+    {
+      "id": 18,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "століття || час;ера=>century || age;hundred"
+    },
+    {
+      "id": 19,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "ідея || ідеал;думка=>idea || think;brain"
+    },
+    {
+      "id": 20,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "млинець || оладок=>pancake || omlet"
+    },
+    {
+      "id": 21,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "кухня || плита;кімната=>kitchen || room;coock"
+    },
+    {
+      "id": 22,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "onion || salad;onyon=>цибуля || часник;кріп"
+    },
+    {
+      "id": 23,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "краса || доброта;лице=>beauty || face;kind"
+    },
+    {
+      "id": 24,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "тигр || лев;звір=>tiger || beast;lion"
+    },
+    {
+      "id": 25,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "наука || школа;вчений=>science || experiment"
+    },
+    {
+      "id": 26,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "культура || етикет;мова=>culture || country;art"
+    },
+    {
+      "id": 27,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "мисливець || єгер;стрілець=>hunter || ranger;shooter"
+    },
+    {
+      "id": 28,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "настрій || стан;сум=>mood || nood;brave"
+    },
+    {
+      "id": 29,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "медицина || ліки=>medicine || hospital;nurse"
+    },
+    {
+      "id": 30,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "захворювання || нещастя;зло=>disease || ill;cold"
+    },
+    {
+      "id": 31,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "отрута || зілля;засіб=>poison || death;liquid"
+    },
+    {
+      "id": 32,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "комір || шия;рукав=>collar || comyr;neck"
+    },
+    {
+      "id": 33,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "шкіра || сукно;покрив=>leather || cover"
+    },
+    {
+      "id": 34,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "замовник || клієнт;продавець=>customer || client;partner"
+    },
+    {
+      "id": 35,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "звичка || робота;жити=>habit || rabit;use"
+    },
+    {
+      "id": 36,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "christmas || hollyday=>різдво ||  св'ято;пасха "
+    },
+    {
+      "id": 37,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "деспот || лідер;місце=>despot || Leader;Tyrn"
+    },
+    {
+      "id": 38,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "виставка || огляд;галерея=>exhibition || gallery"
+    },
+    {
+      "id": 39,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "холод || зима;мороз=>cold || freeze;warm"
+    },
+    {
+      "id": 40,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "кросівки || взуття;кеди=>sneakers || shoes;cros"
+    },
+    {
+      "id": 41,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "затінок || тінь;тьма=>sunshade || shadow"
+    },
+    {
+      "id": 42,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "мова || тост;нація=>language || nation;speech"
+    },
+    {
+      "id": 43,
+      "groupId": 1,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "язик || рот;губи=>tongue || tnge"
+    },
+    {
+      "id": 44,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "аптека || магазин;маркет=>drugstore || medstore;shop"
+    },
+    {
+      "id": 45,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "черга || стек;очікування=>queue || stack;wait"
+    },
+    {
+      "id": 46,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "акселератор || амортизатор=>accelerator || absorber"
+    },
+    {
+      "id": 47,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "акумулятор || акселератор=>accumulator || absorber"
+    },
+    {
+      "id": 48,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "поворотник || капот=>blinker || bonnet"
+    },
+    {
+      "id": 49,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "капот || амортизатор=>bonnet || accumulator"
+    },
+    {
+      "id": 50,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "багажник ||  багажник  =>boot || bumper"
+    },
+    {
+      "id": 51,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "гальма || бампер=>brake || bumper"
+    },
+    {
+      "id": 52,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "бампер || кузов=>bumper || cab"
+    },
+    {
+      "id": 53,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "кузов || тормоз=>cab || brake"
+    },
+    {
+      "id": 54,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "кабріолет || седан=>cabriolet || sedan"
+    },
+    {
+      "id": 55,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "карбюратор || зчеплення=>carburettor || chassis"
+    },
+    {
+      "id": 56,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "шасі || передача=>chassis || gear"
+    },
+    {
+      "id": 57,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "зчеплення || колінвал=>clutch || crankshaft"
+    },
+    {
+      "id": 58,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "колінвал || циліндр=>crankshaft || cylinder"
+    },
+    {
+      "id": 59,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "циліндр || двигун=>cylinder || engine"
+    },
+    {
+      "id": 60,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "двигун || циліндр;зчеплення=>engine || cylinder;gear"
+    },
+    {
+      "id": 61,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "передача || дивгун=>gear || engine"
+    },
+    {
+      "id": 62,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "клаксон || сирена=>klaxon || beep"
+    },
+    {
+      "id": 63,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "запалювання || двигун=>ignition || horn"
+    },
+    {
+      "id": 64,
+      "groupId": 2,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "домкрат || лімузин=>jack || limusine"
+    },
+    {
+      "id": 65,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "лимузин || седан=>limousine || jack"
+    },
+    {
+      "id": 66,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "мастило || домкрат=>oil || jack"
+    },
+    {
+      "id": 67,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "педаль || двигун=>pedal || engine"
+    },
+    {
+      "id": 68,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "cлон || хобот;жираф=>Elephant || slon;eleant"
+    },
+    {
+      "id": 69,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "кіт || кошеня;корова=>Cat || cow;kitten"
+    },
+    {
+      "id": 70,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "собака || пеc;дог=>Dog || Wolf;dig"
+    },
+    {
+      "id": 71,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "кінь || віслюк;поні=>horse || donkey;hose"
+    },
+    {
+      "id": 72,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "віслюк || кінь;мул=>donkey || osel;horse"
+    },
+    {
+      "id": 73,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "олень || собака;лось=>Deer || horn;dere"
+    },
+    {
+      "id": 74,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "тигр || тапір;тиг=>tiger || leopard;lion"
+    },
+    {
+      "id": 75,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "лев || прайд;леопард=>lion || cat;leopard"
+    },
+    {
+      "id": 76,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "корова || бик;кінь=>cow || bull;cov"
+    },
+    {
+      "id": 77,
+      "groupId": 3,
+      "difficulty": 1,
+      "levelLanguage": "ENG_UKR",
+      "levelGroup": "General",
+      "levelType": "WORD",
+      "level": "мавпа || примат;горила=>monkey || horyla;mnky"
+    }
+  ]
+}

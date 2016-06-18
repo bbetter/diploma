@@ -11,9 +11,10 @@ import Foundation
 public class UserDefaultsManager{
     let ConfigKeyValue = "config"
     
-    static var sharedInstance = UserDefaultsManager()
+    public static var sharedInstance = UserDefaultsManager()
     
     lazy var preferences = NSUserDefaults.standardUserDefaults()
+   
     public func getConfig()->Config?{
 
         if preferences.objectForKey(ConfigKeyValue) == nil {

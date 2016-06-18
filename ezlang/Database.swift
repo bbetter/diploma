@@ -27,6 +27,31 @@ extension Realm {
 class Database {
     static let sharedInstance = Database()
 
+    func clearProgress(){
+        let realm = try! Realm()
+        let user = realm.objects(User.self).first
+    
+        let groups = realm.objects(Group.self);
+        realm.transaction{
+            user?.points = 0
+            user?.rightCount = 0
+            user?.wrongCount = 0
+            realm.add(user!,update:true)
+        }
+        realm.transaction{
+            groups.forEach{
+                item in
+                //set items to false
+            }
+        }
+    }
+    
+    func getAllLevels() -> [Level]?{
+        let realm = try! Realm()
+        let levels = realm.objects(Level.self)
+        return levels.toArray()
+    }
+    
     func getAllGroups(type:LevelType) -> [Group]? {
         let realm = try! Realm()
         let groups = realm.objects(Group.self).filter{item in return item.groupType == type.rawValue}
@@ -52,7 +77,6 @@ class Database {
     }
 
     func getLevel(groupId: Int, type: LevelType, direction: TranslationDirection) -> Level? {
-        let realm = try! Realm()
         let group = getGroupById(groupId) as Group!
         var filteredLevels = group.levels.filter {
             item in
@@ -70,7 +94,7 @@ class Database {
     func getLevelsByGroupId(groupId: Int) -> [Level]? {
         let realm = try! Realm()
         let group = realm.objectForPrimaryKey(Group.self, key: groupId)
-        return group?.levels
+        return group!.levelsArray()
     }
 
     func saveToDatabase<T where T: Object>(objects: [T]) {
@@ -87,11 +111,11 @@ class Database {
         }
     }
 
-    func setLevelDone(id: Int, direction: TranslationDirection) {
+    func setLevelDone(id: Int) {
         let realm = try! Realm()
         realm.transaction {
             var level = realm.objectForPrimaryKey(Level.self, key: id)
-            if (direction == .Forward) {
+            if (Game.sharedInstance.config.direction == .Forward) {
                 level?.doneForward = true
             } else {
                 level?.doneBackward = true
@@ -127,42 +151,42 @@ class Database {
         return ""
     }
 
-    public static func readDbFromFile(fileName: String) {
-        do {
-            let str = readFile(fileName)
-            let data = str.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
-            let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
-            let realm = try! Realm()
-
-            try! realm.write {
-                if let groupsToInsert = json["mGroupInsert"] as? [[String:AnyObject]] {
-                    for group in groupsToInsert {
-                        let groupObj = Group.fromJson(group)
-                        realm.add(groupObj)
-                    }
-                }
-
-                if let groupsToDelete = json["mGroupDelete"] as? [[String:AnyObject]] {
-                    //todo: handle ids of groups to delete
-                }
-
-                if let groupsToUpdate = json["mGroupUpdate"] as? [[String:AnyObject]] {
-                    //todo: handle ids of groups to update
-                }
-
-                if let levelsToInsert = json["mLevelInsert"] as? [[String:AnyObject]] {
-                    for level in levelsToInsert {
-                        let levelObj = Level.fromJson(level)
-                        realm.add(levelObj)
-                    }
-                }
-                if let levelsTpDelete = json["mLevelDelete"] as? [[String:AnyObject]] {
-                    //todo: handle ids of levels to delete
-                }
-            }
-        } catch {
-            print("error serializing JSON: \(error)")
-        }
+    static func readDbFromFile(fileName: String) {
+//        do {
+//            let str = readFile(fileName)
+//            let data = str.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+//            let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+//            let realm = try! Realm()
+//
+//            try! realm.write {
+//                if let groupsToInsert = json["mGroupInsert"] as? [[String:AnyObject]] {
+//                    for group in groupsToInsert {
+//                        let groupObj = Group.fromJson(group)
+//                        realm.add(groupObj)
+//                    }
+//                }
+//
+//                if (json["mGroupDelete"] as? [[String:AnyObject]]) != nil {
+//                    //todo: handle ids of groups to delete
+//                }
+//
+//                if let groupsToUpdate = json["mGroupUpdate"] as? [[String:AnyObject]] {
+//                    //todo: handle ids of groups to update
+//                }
+//
+//                if let levelsToInsert = json["mLevelInsert"] as? [[String:AnyObject]] {
+//                    for level in levelsToInsert {
+//                        let levelObj = Level.fromJson(level)
+//                        realm.add(levelObj)
+//                    }
+//                }
+//                if let levelsTpDelete = json["mLevelDelete"] as? [[String:AnyObject]] {
+//                    //todo: handle ids of levels to delete
+//                }
+//            }
+//        } catch {
+//            print("error serializing JSON: \(error)")
+//        }
     }
 
     func dropProgress(groupId: Int, direction: TranslationDirection) {

@@ -4,45 +4,59 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/ezlangUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ezlangUITests/ezlangUITests.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-acknowledgements.markdown" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang.debug.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang.release.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-acknowledgements.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-frameworks.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-resources.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests.release.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-frameworks.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-acknowledgements.markdown" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests.debug.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-resources.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-acknowledgements.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Object.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/uk.lproj/Localizable.strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/futurearound_bold.ttf" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/DictionaryCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/RatingViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/MenuTypeModeController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/HelpViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/MenuSettingsController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/NetworkUtils.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/GameScene.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/GroupCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/UserDefaultsManager.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/ButtonCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/EasyLangAPI.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/User.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/sprites/LetterNode.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/game/Task.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/game/Game.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/util/Array2D.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/util/TaskFactory.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/ServerResponse.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/Group.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/Level.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/GameGrid.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/CommonExtensions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/SettingCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/MainMenuController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/Launch Screen.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/ProfileViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/SpriteKitUtils.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/AppDelegate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/Base.lproj/Main.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/UserProgressControl.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/RealmExtensions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/GameViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/FeedbackController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/Database.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/DictionaryViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/UiExtensions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlang/GroupsViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/en.lproj/Localizable.strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlangTests/ezlangTests.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezlangTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/SortDescriptor.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Error.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Results.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Migration.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Schema.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Object.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Property.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Aliases.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/LinkingObjects.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Util.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/SwiftVersion.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/ObjectSchema.swift" isTestSource="false" />
@@ -51,116 +65,184 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/RealmConfiguration.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Realm.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Optional.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RealmSwift/RealmSwift/Schema.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Error.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/UI/RemoteImageView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/UI/ResourceStatusOverlay.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/UI/ResourceStatusOverlay.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Request/RequestCallbacks.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Request/ProgressTracker.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Request/FailedRequest.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Request/Request.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Request/NetworkRequest.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/Siesta.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/Collection+Siesta.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/Siesta-ObjC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/Logging.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/ARC+Siesta.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/WeakCache.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/Progress.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/Regex+Siesta.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/String+Siesta.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/NSURL+Siesta.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/DebugFormatting.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/Deprecations.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Support/GCD+Siesta.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Resource.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/ResponseTransformer.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Networking-NSURLSession.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/PersistentCache.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/ResourceObserver.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Service.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Entity.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Networking.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Siesta/Source/Configuration.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMAccessor.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMSchema_Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectSchema.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMResults_Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMArray.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/Realm.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMArray_Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObject.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMRealmConfiguration_Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMRealm_Dynamic.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMCollection.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMResults.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMProperty.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectBase_Dynamic.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMDefines.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMMigration.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObject_Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMSchema.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectStore.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMPlatform.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMRealmConfiguration.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMMigration_Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMRealm_Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMProperty_Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectSchema_Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectBase.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMListBase.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMOptionalBase.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMConstants.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMResults_Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMSchema_Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMSchema.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMCollection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMResults.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMRealm_Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMProperty_Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMRealmConfiguration.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/Realm.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectStore.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectSchema_Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMProperty.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMMigration_Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMRealmConfiguration_Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMArray.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObject.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMArray_Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMRealm_Dynamic.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMRealm.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMListBase.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectSchema.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectBase_Dynamic.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMMigration.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObject_Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMObjectBase.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/Realm/RLMPlatform.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/core/librealm-ios.a" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMSwiftSupport.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObjectSchema.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObject.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/collection_notifications.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/list.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/shared_realm.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/realm_coordinator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/collection_notifier.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/list_notifier.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/transact_log_handler.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/apple/cached_realm.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/results_notifier.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/apple/weak_realm_notifier.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/apple/external_commit_helper.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/async_query.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/collection_change_builder.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/schema.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/object_schema.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/results.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/object_store.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/index_set.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealmConfiguration.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMOptionalBase.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMMigration.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObjectStore.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMSchema.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMArray.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealmUtil.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMUtil.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObservation.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObjectStore.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMAccessor.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObjectBase.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMProperty.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMArray.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMCollection.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMUpdateChecker.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMAnalytics.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMArrayLinkView.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealmConfiguration.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealm.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMConstants.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMQueryUtil.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMAccessor.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMListBase.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMSchema.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMMigration.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealm.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMResults.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMQueryUtil.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObservation.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMConstants.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMArrayLinkView.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMPredicateUtil.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/FeedbackController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/CommonExtensions.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/MenuViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/ButtonCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/User.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/game/Task.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/game/Game.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/util/Array2D.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/util/TaskFactory.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/sprites/LetterNode.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/Group.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/Level.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/models/GameGrid.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/futurearound_bold.ttf" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/SpriteKitUtils.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/Api.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/AppDelegate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/SettingCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/GroupCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/DictionaryCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/GroupsViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/UiExtensions.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/UserProgressControl.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/Database.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/GameScene.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/ProfileViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/HelpViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/GameViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/RealmExtensions.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlang/DictionaryViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/en.lproj/Localizable.strings" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlangTests/ezlangTests.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ezlangTests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/uk.lproj/Localizable.strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests.local.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests.server.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-acknowledgements.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangTests/Pods-ezlangTests-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RealmSwift/RealmSwift-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Siesta/Siesta.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Siesta/Siesta.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Siesta/Siesta-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Siesta/Siesta-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Siesta/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Siesta/Siesta-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangUITests/Pods-ezlangUITests.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangUITests/Pods-ezlangUITests.local.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangUITests/Pods-ezlangUITests.server.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlangUITests/Pods-ezlangUITests.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-acknowledgements.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang.local.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang.server.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-ezlang/Pods-ezlang-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ObjectMapper/ObjectMapper-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ObjectMapper/ObjectMapper.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ObjectMapper/ObjectMapper-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ObjectMapper/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ObjectMapper/ObjectMapper-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ObjectMapper/ObjectMapper.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Core/ToJSON.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Core/Mappable.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Core/FromJSON.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Core/Mapper.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Core/Operators.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Core/Map.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Transforms/TransformType.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Transforms/TransformOf.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Transforms/EnumTransform.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Transforms/DateTransform.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Transforms/NSDecimalNumberTransform.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Transforms/CustomDateFormatTransform.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Transforms/DateFormatterTransform.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Transforms/URLTransform.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/ObjectMapper/ObjectMapper/Transforms/ISO8601DateTransform.swift" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/Library/Developer/Xcode/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ezlang.build/DerivedSources" />
-    <content url="file://$USER_HOME$/Library/Developer/Xcode/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ezlangTests.build/DerivedSources" />
-    <content url="file://$USER_HOME$/Library/Developer/Xcode/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/Realm.build/DerivedSources" />
-    <content url="file://$USER_HOME$/Library/Developer/Xcode/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/RealmSwift.build/DerivedSources" />
-    <content url="file://$USER_HOME$/Library/Developer/Xcode/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/ezlang.build/Debug-iphoneos/ezlang.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.2/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/ObjectMapper.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.2/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ezlang.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.2/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ezlangTests.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.2/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/Realm.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.2/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/RealmSwift.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.2/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/Pods.build/Debug-iphoneos/Siesta.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.2/DerivedData/ezlang-hivmywtqvjozvcevawnfncfkscxc/Build/Intermediates/ezlang.build/Debug-iphoneos/ezlang.build/DerivedSources" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="Header Search Paths">

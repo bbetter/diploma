@@ -8,14 +8,35 @@
 
 import Foundation
 import Siesta
-import Alamofire
+import ObjectMapper
 
 class EasyLangAPI: Service {
-    var sharedInstance: EasyLangAPI = EasyLangAPI()
-    init(){
-        super.init(baseURL:"http://192.168.212.101.xip.io:3000")
+    static var sharedInstance: EasyLangAPI = EasyLangAPI()
+    #if SERVER
+    let baseUrl = "http://ezlang.herokuapp.com/"
+    #else
+    let baseUrl = "http://b12dc0e3.ngrok.io/"
+    #endif
+    
+    init() {
+        super.init(baseURL: baseUrl)
+        Siesta.enabledLogCategories = LogCategory.detailed
+        
     }
     
-    var groups : Resource { resource("groups") }
-    var pack : Resource { resource("pack") }
+    var groups: Resource {
+        return resource("api/groups")
+    }
+    
+    var pack: Resource {
+        return resource("api/pack")
+    }
+    
+    var me: Resource {
+        return resource("api/me")
+    }
+    
+    var levels: Resource {
+        return resource("api/levels")
+    }
 }

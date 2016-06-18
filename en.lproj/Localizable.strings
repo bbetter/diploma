@@ -8,6 +8,7 @@
 
 "profile" = "Profile";
 "new_game" = "New Game";
+"shop" = "Shop";
 "settings" = "Settings";
 "rating" = "Rating";
 "help" = "Help";
@@ -23,19 +24,7 @@
 "ukr_interface" = "Ukrainian";
 "eng_interface" = "English";
 "helptext_title" = "Rules";
-"helptext" = "There are two modes in the game: training, and raiting.
-Training mode is for learning new words. There are free tips and possibility to skip lelel.Raiting mode is for strengtening knowledge. You can earn points to open new levels and get tips.
-Every mod has two kins of tasks: vocabular and grammatic.
-When you choose the mode, you will be offered to select groups of words, with different difficulty and theme.
-When you choose the group, you will see main game field, and the task upon it.
-To proceed to another level, you must find the answer-word in the table. To select it, just press its first letter and swipe through all others.
-You can swipe horizontally, vertically, and even diagonally.
-When word is ready, just take away your finger.
-If you accidentally swipe to wrong letter, just swipe back to last correct letter to cancel it.
-If the answer is correct, you will proceed to next level.
-If you answered right few times in row, you will be gifted with bonus points.
-Same word, can be guessed for maximum possible points, just first time.
-There is a dictionary in training mode. To open it, tap the icon in the right bottom corner of group.";
+"helptext" = "There are two modes in the game: training, and raiting. Training mode is for learning new words. There are free tips and possibility to skip lelel.Raiting mode is for strengtening knowledge. You can earn points to open new levels and get tips.Every mod has two kins of tasks: vocabular and grammatic. When you choose the mode, you will be offered to select groups of words, with different difficulty and theme. When you choose the group, you will see main game field, and the task upon it. To proceed to another level, you must find the answer-word in the table. To select it, just press its first letter and swipe through all others.You can swipe horizontally, vertically, and even diagonally. When word is ready, just take away your finger. If you accidentally swipe to wrong letter, just swipe back to last correct letter to cancel it. If the answer is correct, you will proceed to next level. If you answered right few times in row, you will be gifted with bonus points. Same word, can be guessed for maximum possible points, just first time.There is a dictionary in training mode. To open it, tap the icon in the right bottom corner of group.";
 
 
 

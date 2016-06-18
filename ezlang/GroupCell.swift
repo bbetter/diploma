@@ -11,10 +11,12 @@ import UIKit
 
 class GroupCell :UITableViewCell{
 
+    
+    @IBOutlet weak var groupBackgroundImageView: UIImageView!
     @IBOutlet weak var groupImageView: UIImageView?
     @IBOutlet weak var nameLabel: UILabel?
     @IBOutlet weak var pointsLabel: UILabel?
     
-    @IBOutlet weak var dictionary: UIButton!
+    @IBOutlet weak var mainActionButton: UIButton!
     @IBOutlet weak var disprogress: UIButton!
 }

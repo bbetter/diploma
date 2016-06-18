@@ -8,10 +8,13 @@
 
 import Foundation
 import RealmSwift
+import ObjectMapper
 
-class Level: Object {
+class Level: Object, Mappable{
     dynamic var id = 0
     dynamic var group: Group?
+    
+    var groupId : Int?
 
     dynamic var type:String = LevelType.LookingForWord.rawValue
 
@@ -23,39 +26,22 @@ class Level: Object {
     override static func primaryKey() -> String? {
         return "id"
     }
-
-    static func fromJson(json: [String:AnyObject]) -> Level {
-        let app = UIApplication.sharedApplication().delegate as! AppDelegate
-        let levelObj = Level()
-        if let id = json["mId"] as? Int {
-            levelObj.id = id
-        }
-        if let difficulty = json["mDifficulty"] as? Int {
-            levelObj.difficulty = difficulty
-        }
-//        if let levelLanguage = json["mLevelLanguage"] as? String {
-//            levelObj.language = levelLanguage
-//        }
-        if let groupId = json["mGroupId"] as? Int {
-            let group = app.database.getGroupById(groupId)
-            levelObj.group = group
-        }
-//        if let levelGroup = json["mLevelGroup"] as? String {
-//            levelObj.levelGroup = levelGroup
-//        }
-        if let levelType = json["mLevelType"] as? String {
-            levelObj.type = levelType
-        }
-        if let level = json["mLevel"] as? String {
-            levelObj.rawLevel = level
-        }
-        if let doneForward = json["mDoneForward"] as? Bool {
-            levelObj.doneForward = doneForward
-        }
-        if let doneBackward = json["mDoneBackward"] as? Bool {
-            levelObj.doneBackward = doneBackward
-        }
-        return levelObj
+    
+    required convenience init?(_ map: Map) {
+        self.init()
+    }
+    
+    static func mappedLevel(dict: Dictionary<String,AnyObject>){
+        Mapper<Level>().map(dict)! as Level
+    }
+    
+    func mapping(map: Map) {
+        id <- map["id"]
+        difficulty <- map["difficulty"]
+        groupId <- map["groupId"]
+        type <- map["levelType"]
+        rawLevel <- map["level"]
+        difficulty <- map["difficulty"]
     }
 
     func getTask(levelType:LevelType,direction:TranslationDirection) -> Task {
@@ -104,7 +90,6 @@ class Level: Object {
             resAlts = resParts[1].split(";")
         }
 
-
         for(index,_) in sourceAlts.enumerate(){
             sourceAlts[index] = sourceAlts[index].stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         }
@@ -113,7 +98,14 @@ class Level: Object {
             resAlts[index] = resAlts[index].stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         }
 
+        print("{word = \(s)(\(sourceAlts.joinWithSeparator(",")))-\(r)(\(resAlts.joinWithSeparator(","))}")
         return (s, sourceAlts, r, resAlts)
+    }
+
+    override var debugDescription :String {
+        return "{ id=\(id);;;" +
+                "difficulty=\(difficulty);;;" +
+                "rawLevel=\(rawLevel);;; }"
     }
 
 }

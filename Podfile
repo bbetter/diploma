@@ -6,7 +6,8 @@ use_frameworks!
 target 'ezlang' do
  pod 'RealmSwift'
  pod 'Siesta', '>=1.0-beta.6'
- pod 'Siesta/Alamofire'
+ pod 'ObjectMapper', '~> 1.2'
+
 end
 
 target 'ezlangTests' do

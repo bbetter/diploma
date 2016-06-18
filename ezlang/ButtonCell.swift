@@ -9,17 +9,23 @@
 import Foundation
 import UIKit
 
-typealias MainMenuButtonAction = () -> Void
+typealias SimpleButtonAction = () -> Void
 
 class ButtonCell: UITableViewCell {
     
-    @IBOutlet weak private var button: UIButton!
+    @IBOutlet weak private var cellButton: UIButton?
+    @IBOutlet weak private var cellImage: UIImageView?
 
-    var buttonClickAction: MainMenuButtonAction?
+    var buttonClickAction: SimpleButtonAction?
     
-    var buttonTitle: String? {
-        get { return button.titleLabel?.text }
-        set { button.setTitle(newValue,forState: .Normal) }
+    var cellButtonTitle: String? {
+        get { return cellButton?.titleLabel?.text }
+        set { cellButton?.setTitle(newValue,forState: .Normal) }
+    }
+
+    var cellImageValue: UIImage? {
+        get { return cellImage?.image }
+        set { cellImage?.image = newValue}
     }
     
     @IBAction private func buttonClick(sender: UIButton) {
@@ -28,8 +34,7 @@ class ButtonCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        button.setBackgroundImage(UIImage(named: "menu_button"), forState: .Normal)
-        button.setBackgroundImage(UIImage(named: "menu_button_clicked"), forState: .Highlighted)
-        
+        cellButton?.setBackgroundImage(UIImage(named: "menu_button"), forState: .Normal)
+        cellButton?.setBackgroundImage(UIImage(named: "menu_button_clicked"), forState: .Highlighted)
     }
 }

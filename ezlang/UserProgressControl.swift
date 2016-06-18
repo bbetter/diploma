@@ -11,6 +11,7 @@ import UIKit
 @IBDesignable class CustomProgressView: UIView {
     
     @IBInspectable var progress: CGFloat = 0 { didSet { setNeedsDisplay() } }
+    
     @IBInspectable var toNextLevel: CGFloat = 0 { didSet { setNeedsDisplay() } }
     
     @IBInspectable var lineColor: UIColor = UIColor.whiteColor() { didSet { setNeedsDisplay() } }
